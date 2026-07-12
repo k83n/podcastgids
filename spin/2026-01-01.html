@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SPIN — 1 januari 2026</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root { --bg:#12100d; --kaart:#1c1915; --rand:#2c2822; --tekst:#ece5d8; --dim:#a89f8d; --accent:#e8b04b; --accent2:#d4713f; --groen:#1db954; --apple:#fc5c76; }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--tekst); font-family:Inter,-apple-system,"Helvetica Neue",sans-serif; line-height:1.55; -webkit-font-smoothing:antialiased; }
+header { padding:20px 20px 26px; text-align:center; background:radial-gradient(ellipse 90% 120% at 50% -20%,#3a2c14 0%,transparent 60%),var(--bg); }
+.terug { text-align:left; max-width:680px; margin:0 auto 22px; }
+.terug a { color:var(--dim); text-decoration:none; font-size:13.5px; font-weight:500; }
+.terug a:hover { color:var(--accent); }
+header .boventitel { color:var(--accent); font-size:13px; letter-spacing:.25em; text-transform:uppercase; font-weight:600; }
+h1 { font-family:Fraunces,Georgia,serif; font-weight:700; font-size:clamp(30px,7vw,48px); margin:8px 0 6px; line-height:1.06; }
+header .datum { color:var(--dim); font-size:14px; }
+header .intro { color:var(--tekst); max-width:600px; margin:18px auto 0; font-size:15.5px; opacity:.92; }
+.spotify-knop { display:inline-flex; align-items:center; gap:8px; margin-top:22px; background:var(--groen); color:#04150a; text-decoration:none; font-weight:600; font-size:15px; padding:11px 22px; border-radius:999px; }
+.spotify-knop small { font-weight:500; opacity:.8; }
+main { max-width:680px; margin:0 auto; padding:12px 18px 60px; }
+.artiest { background:var(--kaart); border:1px solid var(--rand); border-radius:16px; padding:20px 20px 16px; margin:16px 0; }
+.artiest-kop { display:flex; align-items:center; justify-content:space-between; gap:14px; flex-wrap:wrap; }
+.kop-tekst { flex:1; min-width:0; }
+.hoes { width:64px; height:64px; border-radius:10px; flex:none; object-fit:cover; border:1px solid var(--rand); background:var(--rand); }
+.artiest h2 { font-family:Fraunces,Georgia,serif; font-weight:600; font-size:24px; margin:0; line-height:1.1; }
+.pill { font-size:11.5px; letter-spacing:.04em; text-transform:uppercase; font-weight:600; color:var(--accent2); border:1px solid var(--accent2); border-radius:999px; padding:3px 10px; white-space:nowrap; }
+.albumtitel { font-family:Fraunces,Georgia,serif; font-style:italic; font-size:17px; color:var(--accent); margin:3px 0 0; }
+.beschrijving { color:var(--dim); font-size:14.5px; margin:10px 0 14px; }
+.aanleiding { color:var(--tekst); font-size:14.5px; margin:0 0 12px; }
+.ontvangst { color:var(--dim); font-size:13.5px; font-style:italic; margin:0 0 14px; padding:8px 12px; border-left:2px solid var(--accent2); background:rgba(212,113,63,.06); border-radius:0 8px 8px 0; }
+.apple { display:inline-flex; align-items:center; gap:6px; margin:0 0 16px; font-size:13px; font-weight:600; color:var(--apple); text-decoration:none; border:1px solid #45323a; border-radius:999px; padding:5px 13px; }
+.apple:hover { border-color:var(--apple); }
+.nummers { list-style:none; margin:0; padding:0; border-top:1px solid var(--rand); }
+.nummers li { display:flex; align-items:center; gap:12px; padding:11px 2px; border-bottom:1px solid var(--rand); }
+.nummers li:last-child { border-bottom:none; }
+.noot { color:var(--groen); flex:none; font-size:15px; }
+.titel { font-weight:500; }
+.album-bronnen { color:var(--dim); font-size:12px; margin:12px 0 0; padding-top:10px; border-top:1px solid var(--rand); }
+.album-bronnen a { color:var(--dim); text-decoration:underline; text-decoration-color:var(--rand); text-underline-offset:3px; }
+.album-bronnen a:hover { color:var(--accent); }
+.bronnen { margin:34px 0 0; padding-top:18px; border-top:1px solid var(--rand); }
+.bronnen h3 { font-family:Fraunces,Georgia,serif; font-weight:600; font-size:15px; color:var(--dim); margin:0 0 8px; letter-spacing:.04em; text-transform:uppercase; }
+.bronnen ul { list-style:none; margin:0; padding:0; }
+.bronnen li { color:var(--dim); font-size:13px; padding:3.5px 0; }
+.bronnen a { color:var(--dim); text-decoration:underline; text-decoration-color:var(--rand); text-underline-offset:3px; }
+.bronnen a:hover { color:var(--accent); }
+.bron-noot { opacity:.75; }
+footer { text-align:center; color:var(--dim); font-size:12.5px; padding:0 20px 40px; }
+a { color:var(--accent); }
+</style>
+</head>
+<body>
+<header>
+  <nav class="terug"><a href="../">← Podcastgids</a></nav>
+  <div class="boventitel">SPIN</div>
+  <h1>The 40 Best Albums From the Last 40 Years That You Probably Didn&#x27;t Hear (But Should&#x27;ve)</h1>
+  <div class="datum">Aflevering 1 januari 2026</div>
+  <p class="intro">Geen podcast maar een artikel: het SPIN-team (o.a. Arsenio Orteza, Bill Kopp, Steve Hochman) kiest per redacteur de beste platen van de afgelopen veertig jaar die vrijwel niemand hoorde — van jujú en ethiojazz tot powerpop en krautrock.</p>
+  
+</header>
+<main>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music/11/78/34/mzi.xilnfwwy.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>The Knitters</h2><div class="albumtitel">Poor Little Critter in the Road</div></div><span class="pill">1985</span></div>
+    <p class="beschrijving">Zijproject van leden van punkband X met Dave Alvin (The Blasters).</p>
+    <p class="aanleiding">Akoestische country/folk vóórdat &#x27;unplugged&#x27; en &#x27;americana&#x27; bestonden — een voorloper van een hele beweging.</p>
+    
+    <a class="apple" href="https://music.apple.com/nl/album/poor-little-critter-on-the-road/106219051?uo=4">◎ Album op Apple Music →</a>
+    <p class="album-bronnen">Bronnen: SPIN — Arsenio Orteza</p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/a0/ed/ba/a0edba9e-42d2-9151-c15e-d4094ae8dbbd/0.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Died Pretty</h2><div class="albumtitel">Free Dirt</div></div><span class="pill">1986</span></div>
+    <p class="beschrijving">Australische psych/alt-rockband rond frontman Ron Peno.</p>
+    <p class="aanleiding">Donkere, bezwerende gitaarrock; Peno ontvouwt zijn regels langzaam maar donderend.</p>
+    
+    <a class="apple" href="https://music.apple.com/nl/album/free-dirt/1717713517?uo=4">◎ Album op Apple Music →</a>
+    <p class="album-bronnen">Bronnen: SPIN — Matthew Thompson</p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/90/c3/9a/90c39abf-187b-3f51-2410-343c4b71273d/23UMGIM54330.rgb.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Steve Forbert</h2><div class="albumtitel">Streets of This Town</div></div><span class="pill">1988</span></div>
+    <p class="beschrijving">Heartland-singer-songwriter, eind jaren 70 bekend van &#x27;Romeo&#x27;s Tune&#x27;.</p>
+    <p class="aanleiding">Geffen-comeback geproduceerd door E Street-bassist Garry Tallent: strak, hooky heartland-rock, gesneuveld tussen hairmetal en de naderende grunge.</p>
+    
+    <a class="apple" href="https://music.apple.com/nl/album/streets-of-this-town-revisited-expanded-edition/1690861350?uo=4">◎ Album op Apple Music →</a>
+    <p class="album-bronnen">Bronnen: SPIN — Arsenio Orteza</p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music5/v4/65/db/a4/65dba437-ec11-bb7f-dacf-8dc4c6439fe5/603497889549.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>The Zeros</h2><div class="albumtitel">4-3-2-1</div></div><span class="pill">1991</span></div>
+    
+    <p class="aanleiding">Ramones-meets-Sweet glampunk; hoogtepunt is het onweerstaanbare &#x27;Sticky Sweet Girls&#x27; van precies 1:59.</p>
+    
+    <a class="apple" href="https://music.apple.com/nl/album/4-3-2-1-zeros/993449252?uo=4">◎ Album op Apple Music →</a>
+    <p class="album-bronnen">Bronnen: SPIN — Arsenio Orteza</p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music/85/21/6a/mzi.wmdjwozc.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Throw That Beat in the Garbagecan!</h2><div class="albumtitel">Not Particularly Silly</div></div><span class="pill">1991</span></div>
+    
+    <p class="aanleiding">Zes eigenzinnige Duitsers (bandnaam uit een B-52&#x27;s-song): bubblegum-pop door proto-grunge-geluid gehaald, Engelstalig en aandoenlijk — over go-karts, chocola als ontbijt en meisjes van Orion.</p>
+    
+    <a class="apple" href="https://music.apple.com/nl/album/not-particularly-silly/297571608?uo=4">◎ Album op Apple Music →</a>
+    <p class="album-bronnen">Bronnen: SPIN — Arsenio Orteza</p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/38/81/4d/38814db4-bce6-3132-e33a-a44ee497de7c/00602517623088.rgb.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Talk Talk</h2><div class="albumtitel">Laughing Stock</div></div><span class="pill">1991</span></div>
+    <p class="beschrijving">Begonnen als synthpopband, geëindigd als avant-gardistische mystici.</p>
+    <p class="aanleiding">Hun laatste plaat en samen met Spirit of Eden de blauwdruk van post-rock; nog kariger, nog compromislozer. Begin bij &#x27;Taphead&#x27;.</p>
+    
+    <a class="apple" href="https://music.apple.com/nl/album/laughing-stock/1442531159?uo=4">◎ Album op Apple Music →</a>
+    <p class="album-bronnen">Bronnen: SPIN — Matthew Thompson</p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/65/42/61/6542610d-1f3f-5e90-b075-10d28ffa6c86/21UMGIM40583.rgb.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Khaled</h2><div class="albumtitel">Khaled</div></div><span class="pill">1992</span></div>
+    <p class="beschrijving">De Algerijnse koning van de raï.</p>
+    <p class="aanleiding">Bevat de kolossale hit &#x27;Didi&#x27;; disco-derwisj-energie, bewust niet in het Engels gezongen — dat houdt het mysterie intact.</p>
+    
+    <a class="apple" href="https://music.apple.com/nl/album/khaled/1566382464?uo=4">◎ Album op Apple Music →</a>
+    <p class="album-bronnen">Bronnen: SPIN — Arsenio Orteza</p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/9d/30/b2/9d30b2bc-d8e1-e7f7-3eaf-2f76fa9ccee0/00888072389434.rgb.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Tiny Tim with Brave Combo</h2><div class="albumtitel">Girl</div></div><span class="pill">1996</span></div>
+    
+    <p class="aanleiding">De ukelele-excentriekeling met polkaband Brave Combo: veertien songs van Beatles-covers tot pure corn, aaneengeregen door die vibrato-bariton.</p>
+    
+    <a class="apple" href="https://music.apple.com/nl/album/girl/1443762545?uo=4">◎ Album op Apple Music →</a>
+    <p class="album-bronnen">Bronnen: SPIN — Arsenio Orteza</p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/3a/be/de/3abedec4-480e-86f8-cfbc-c34d0037916a/00028945664026.rgb.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Pierre Henry, Michel Colombier</h2><div class="albumtitel">Métamorphose: Messe Pour Le Temps Présent</div></div><span class="pill">1997</span></div>
+    
+    <p class="aanleiding">Elf remixers halen de musique-concrète-balletscore uit 1967 door de techno-molen, met vijf versies van &#x27;Psyché Rock&#x27; — de riff die je kent als basis van de Futurama-tune.</p>
+    
+    <a class="apple" href="https://music.apple.com/nl/album/m%C3%A9tamorphose-messe-pour-le-temps-pr%C3%A9sent/1452528709?uo=4">◎ Album op Apple Music →</a>
+    <p class="album-bronnen">Bronnen: SPIN — Arsenio Orteza</p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/42/b2/1b/42b21b15-ba18-6254-b487-1b3c85d1b710/91848.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>King Sunny Ade</h2><div class="albumtitel">Odù</div></div><span class="pill">1998</span></div>
+    <p class="beschrijving">Nigeriaanse jujú-koning: 120+ albums, als eerste Afrikaan twee keer Grammy-genomineerd.</p>
+    <p class="aanleiding">Deels tribale zang, deels sixties-loungejazz; uniek en transporterend.</p>
+    
+    <a class="apple" href="https://music.apple.com/nl/album/od%C3%B9/1866886634?uo=4">◎ Album op Apple Music →</a>
+    <p class="album-bronnen">Bronnen: SPIN — Bob Guccione, Jr.</p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Features125/v4/f3/95/07/f39507fc-93bc-bcbe-ff63-5eee27936310/dj.tbywneqv.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Mulatu Astatke</h2><div class="albumtitel">Éthiopiques, Vol. 4: Ethio Jazz &amp; Musique Instrumentale, 1969-1974</div></div><span class="pill">1998</span></div>
+    <p class="beschrijving">De &#x27;vader&#x27; van de ethiojazz.</p>
+    <p class="aanleiding">Dé introductie: vibrafoon, orgel en blazers over Ethiopische melodieën, Latin en funk (opnames 1969-1974).</p>
+    
+    <a class="apple" href="https://music.apple.com/nl/album/%C3%A9thiopiques-vol-4-ethio-jazz-musique-instrumentale/78928362?uo=4">◎ Album op Apple Music →</a>
+    <p class="album-bronnen">Bronnen: SPIN — Kyle Eustice</p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/bc/79/4c/bc794c46-e0bd-f48a-14ec-f301818acbeb/5037005001560_cover.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Maryam Mursal</h2><div class="albumtitel">The Journey</div></div><span class="pill">1998</span></div>
+    
+    <p class="aanleiding">Somalische zangeres die deels te voet met vijf kinderen naar asiel in Denemarken vluchtte; dat verhaal draagt deze mix van traditie en moderne productie op Peter Gabriels Real World-label.</p>
+    
+    <a class="apple" href="https://music.apple.com/nl/album/the-journey-real-world-gold/1654121911?uo=4">◎ Album op Apple Music →</a>
+    <p class="album-bronnen">Bronnen: SPIN — Steve Hochman</p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><div class="kop-tekst"><h2>Pinetop Seven</h2><div class="albumtitel">Rigging the Toplights</div></div><span class="pill">1998</span></div>
+    
+    <p class="aanleiding">Chicago-alt-country met soundtrack-ambities: weidse vergezichten en verhalen over mensen die verdwalen in de donkere hoeken van Amerika. (Niet op Apple Music NL.)</p>
+    
+    
+    <p class="album-bronnen">Bronnen: SPIN — Stephen Deusner</p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/36/89/f4/3689f442-de2a-2931-e059-18a4979b2e5c/mzi.rbghcjek.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Robert Stewart</h2><div class="albumtitel">The Force</div></div><span class="pill">1998</span></div>
+    
+    <p class="aanleiding">Zwaar ondergewaardeerde saxofonist in de A Love Supreme-traditie; het tien minuten durende titelstuk is de kern.</p>
+    
+    <a class="apple" href="https://music.apple.com/nl/album/the-force/98374235?uo=4">◎ Album op Apple Music →</a>
+    <p class="album-bronnen">Bronnen: SPIN — Arsenio Orteza</p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/8e/f5/85/8ef58532-26b5-41c2-b900-35ead789405e/680201836235.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>The Vandalias</h2><div class="albumtitel">Buzzbomb!</div></div><span class="pill">1998</span></div>
+    
+    <p class="aanleiding">Suikerspin-powerpop in de lijn Raspberries/vroege Cheap Trick/Sweet, compleet met cartoonhoes.</p>
+    
+    <a class="apple" href="https://music.apple.com/nl/album/buzzbomb/1357663209?uo=4">◎ Album op Apple Music →</a>
+    <p class="album-bronnen">Bronnen: SPIN — Arsenio Orteza</p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music60/v4/95/53/a6/9553a672-0866-5eb8-6c62-42bfbb4ec608/artwork.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>The Subteens</h2><div class="albumtitel">Burn Your Cardigan</div></div><span class="pill">1999</span></div>
+    
+    <p class="aanleiding">Memphis-powertrio tussen The Who en Big Star: gespierde riffs, zelfspot en twintiger-onrust in kraakflats en dive bars.</p>
+    
+    <a class="apple" href="https://music.apple.com/nl/album/1117514747">◎ Album op Apple Music →</a>
+    <p class="album-bronnen">Bronnen: SPIN — Stephen Deusner</p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><div class="kop-tekst"><h2>Richard Orange and the Eggmen</h2><div class="albumtitel">Richard Orange and the Eggmen</div></div><span class="pill">2000</span></div>
+    
+    <p class="aanleiding">Voor eeuwige Beatles-fans: trippy overdubs, orkesten, een McCartney-achtige stem en zelfs een song getiteld &#x27;Beatlesque&#x27;. (Niet op Apple Music NL.)</p>
+    
+    
+    <p class="album-bronnen">Bronnen: SPIN — Arsenio Orteza</p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/a8/9f/52/a89f5212-9869-52df-7b84-3c0f7d92edc6/18393.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Mary Karlzen</h2><div class="albumtitel">The Wanderlust Diaries</div></div><span class="pill">2006</span></div>
+    
+    <p class="aanleiding">Americana die binnen de eerste acht minuten van mistige-ochtendschoonheid via stevige rock naar een prachtige Replacements-cover schiet.</p>
+    
+    <a class="apple" href="https://music.apple.com/nl/album/the-wanderlust-diaries/1746544235?uo=4">◎ Album op Apple Music →</a>
+    <p class="album-bronnen">Bronnen: SPIN — Arsenio Orteza</p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music4/v4/7f/c7/68/7fc76875-857a-3e4f-39dc-dddc63dc8938/00015707980852.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Linda Ronstadt &amp; Ann Savoy</h2><div class="albumtitel">Adieu False Heart</div></div><span class="pill">2006</span></div>
+    
+    <p class="aanleiding">Cajun-getint duo-album: deels alsof de Stone Poneys terug zijn, deels Magnolia Sisters, plus een &#x27;Walk Away Renee&#x27;.</p>
+    
+    <a class="apple" href="https://music.apple.com/nl/album/adieu-false-heart/712134363?uo=4">◎ Album op Apple Music →</a>
+    <p class="album-bronnen">Bronnen: SPIN — Arsenio Orteza</p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/0f/3b/c7/0f3bc780-a75e-86a9-b299-0b18b56736ed/00602517049451.rgb.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Caetano Veloso</h2><div class="albumtitel">Cê</div></div><span class="pill">2006</span></div>
+    <p class="beschrijving">Mede-grondlegger van de tropicália.</p>
+    <p class="aanleiding">Uitgebeend, bracing kwartetrock: intiem, eigenzinnig en een hoogtepunt in een nog altijd groeiend oeuvre.</p>
+    
+    <a class="apple" href="https://music.apple.com/nl/album/c%C3%AA/1443800079?uo=4">◎ Album op Apple Music →</a>
+    <p class="album-bronnen">Bronnen: SPIN — Steve Hochman</p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><div class="kop-tekst"><h2>Moise and Alida Viator</h2><div class="albumtitel">Creole Fusion</div></div><span class="pill">2006</span></div>
+    
+    <p class="aanleiding">Cajun/creoolse familieband (met gast Sonny Landreth) die alles van stierenvechtmuziek tot &#x27;My Boy Lollipop&#x27; naar de eigen dansvloer haalt. (Niet op Apple Music NL.)</p>
+    
+    
+    <p class="album-bronnen">Bronnen: SPIN — Arsenio Orteza</p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/51/18/2a/51182ab7-d205-1371-feaf-ef3a76e027e9/00602498764411.rgb.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Robin Williamson</h2><div class="albumtitel">The Iron Stone</div></div><span class="pill">2007</span></div>
+    <p class="beschrijving">Voorman van de legendarische Incredible String Band.</p>
+    <p class="aanleiding">Eigen songs naast getoonzette beroemde gedichten, met Keltische harp, shawm en een kabouterachtig timbre op zoek naar het verloren akkoord.</p>
+    
+    <a class="apple" href="https://music.apple.com/nl/album/the-iron-stone/1443630003?uo=4">◎ Album op Apple Music →</a>
+    <p class="album-bronnen">Bronnen: SPIN — Arsenio Orteza</p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/c7/43/c0/c743c0fe-d893-88df-eafa-df5afa1e6b8c/5060116091120_cover.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>A Camp</h2><div class="albumtitel">Colonia</div></div><span class="pill">2009</span></div>
+    <p class="beschrijving">Zijproject van Cardigans-zangeres Nina Persson.</p>
+    <p class="aanleiding">De onderkoelde cool van Nico plus cabaret-melodrama.</p>
+    
+    <a class="apple" href="https://music.apple.com/nl/album/colonia/301180875?uo=4">◎ Album op Apple Music →</a>
+    <p class="album-bronnen">Bronnen: SPIN — Bill Kopp</p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music/41/97/d5/mzi.vfvozdwv.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>The Orange Peels</h2><div class="albumtitel">2020</div></div><span class="pill">2009</span></div>
+    
+    <p class="aanleiding">Waar AM Gold en powerpop samenkomen: extreem melodieus, breed georiënteerd en nooit een kopie van de idolen.</p>
+    
+    <a class="apple" href="https://music.apple.com/nl/album/2020/335060950?uo=4">◎ Album op Apple Music →</a>
+    <p class="album-bronnen">Bronnen: SPIN — Bill Kopp</p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music/78/97/0a/mzi.lwlgeuvc.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>DC Fontana</h2><div class="albumtitel">La Contessa</div></div><span class="pill">2011</span></div>
+    
+    <p class="aanleiding">Retro-soul met moderne glans: fuzzgitaren, combo-orgels en blazers; hints van Morricone en John Barry, maar het rockt altijd.</p>
+    
+    <a class="apple" href="https://music.apple.com/nl/album/la-contessa/466665237?uo=4">◎ Album op Apple Music →</a>
+    <p class="album-bronnen">Bronnen: SPIN — Bill Kopp</p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/83/9c/5d/839c5df9-55ba-a407-2c5e-698ba8a481c4/cover.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>The dB&#x27;s</h2><div class="albumtitel">Falling off the Sky</div></div><span class="pill">2012</span></div>
+    <p class="beschrijving">Powerpop-veteranen rond Peter Holsapple en Chris Stamey.</p>
+    <p class="aanleiding">De reünieplaat als misschien wel hun beste werk: ouder, wijzer en tekstueel op hun scherpst.</p>
+    
+    <a class="apple" href="https://music.apple.com/nl/album/falling-off-the-sky/1518068213?uo=4">◎ Album op Apple Music →</a>
+    <p class="album-bronnen">Bronnen: SPIN — Bill Kopp</p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music6/v4/19/3a/7a/193a7adb-de3f-fef1-e7bd-04e0140a8518/cover.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Portland Cello Project</h2><div class="albumtitel">Portland Cello Project Play Beck Hansen&#x27;s Song Reader</div></div><span class="pill">2012</span></div>
+    
+    <p class="aanleiding">Becks alleen-als-bladmuziek verschenen Song Reader, door het cellocollectief en gastvocalisten overtuigender &#x27;gelezen&#x27; dan wie ook.</p>
+    
+    <a class="apple" href="https://music.apple.com/nl/album/portland-cello-project-play-beck-hansens-song-reader/743129951?uo=4">◎ Album op Apple Music →</a>
+    <p class="album-bronnen">Bronnen: SPIN — Arsenio Orteza</p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><div class="kop-tekst"><h2>Sir Deja Doog</h2><div class="albumtitel">Love Coffin</div></div><span class="pill">2014</span></div>
+    
+    <p class="aanleiding">Joy Division doet &#x27;Monster Mash&#x27;: horror-host-rockabilly uit Indiana, met het verhaal van Orpheus en Eurydice in skits. (Niet op Apple Music NL.)</p>
+    
+    
+    <p class="album-bronnen">Bronnen: SPIN — Stephen Deusner</p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/7e/39/c1/7e39c1c3-4d37-22ee-e340-478114cc82fd/4030433601624_cover.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Noura Mint Seymali</h2><div class="albumtitel">Tzenni</div></div><span class="pill">2014</span></div>
+    <p class="beschrijving">Dochter van de Mauritaanse griot-doorbraak Dimi Mint Abba-generatie.</p>
+    <p class="aanleiding">Griot-power met echtgenoot Jeiche Ould Chighaly op elektrische gitaar; elektrificerender dan Tinariwen, in de buurt van Mdou Moctar.</p>
+    
+    <a class="apple" href="https://music.apple.com/nl/album/tzenni/882843574?uo=4">◎ Album op Apple Music →</a>
+    <p class="album-bronnen">Bronnen: SPIN — Steve Hochman</p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music4/v4/ec/97/be/ec97be22-3f8c-4184-f0c7-7e8ec177cbe0/634457239227.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Sloan</h2><div class="albumtitel">Commonwealth</div></div><span class="pill">2014</span></div>
+    <p class="beschrijving">Canadese powerpop-institutie.</p>
+    <p class="aanleiding">Ambitieuze dubbelaar waarop elk bandlid een eigen plaatkant vult — vier goede mini-albums in één.</p>
+    
+    <a class="apple" href="https://music.apple.com/nl/album/commonwealth/892852281?uo=4">◎ Album op Apple Music →</a>
+    <p class="album-bronnen">Bronnen: SPIN — Bill Kopp</p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music62/v4/b4/7a/f5/b47af539-8d7b-316a-24d9-b102197ffb9d/769791955400.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Khaira Arby</h2><div class="albumtitel">Gossip</div></div><span class="pill">2015</span></div>
+    
+    <p class="aanleiding">Malinese zangeres, minder bekend dan Ali Farka Touré of Oumou Sangaré, maar de diepe kracht van haar muziek doet niet onder.</p>
+    
+    <a class="apple" href="https://music.apple.com/nl/album/gossip-feat-khaira-arby/1351096253?uo=4">◎ Album op Apple Music →</a>
+    <p class="album-bronnen">Bronnen: SPIN — Steve Hochman</p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music42/v4/cd/30/c3/cd30c317-f92c-53fe-81a0-79147bf18f56/mzm.oghapcrx.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>The Egyptian Lover</h2><div class="albumtitel">1984</div></div><span class="pill">2015</span></div>
+    <p class="beschrijving">West Coast electro-hiphop-pionier.</p>
+    <p class="aanleiding">Ruim dertig jaar na On the Nile een hommage aan zijn debuutjaar, trouw aan de 808-roots.</p>
+    
+    <a class="apple" href="https://music.apple.com/nl/album/1984/1044327708?uo=4">◎ Album op Apple Music →</a>
+    <p class="album-bronnen">Bronnen: SPIN — Kyle Eustice</p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/49/4a/97/494a97a9-f33c-cf36-f37f-6903dd610c26/00888072369085.rgb.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>JD McPherson</h2><div class="albumtitel">Let the Good Times Roll</div></div><span class="pill">2015</span></div>
+    
+    <p class="aanleiding">De wilde, roekeloze energie van vroege rock-&#x27;n-roll vrijwel intact de 21e eeuw in getild — mét kennis van alle hardere rock die erna kwam.</p>
+    
+    <a class="apple" href="https://music.apple.com/nl/album/let-the-good-times-roll/1440943137?uo=4">◎ Album op Apple Music →</a>
+    <p class="album-bronnen">Bronnen: SPIN — Bill Kopp</p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music62/v4/e2/11/54/e2115439-1eec-d7e3-4681-2b5a086fe653/MillsConcertoCover.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Mike Mills</h2><div class="albumtitel">Concerto for Violin, Rock Band and String Orchestra</div></div><span class="pill">2016</span></div>
+    <p class="beschrijving">R.E.M.-bassist.</p>
+    <p class="aanleiding">Met violist Robert McDuffie: een meerdelig concert voor gitaar-bas-drums plus krachtig strijkorkest.</p>
+    
+    <a class="apple" href="https://music.apple.com/nl/album/mike-mills-concerto-for-violin-rock-band-and-string/1156567984?uo=4">◎ Album op Apple Music →</a>
+    <p class="album-bronnen">Bronnen: SPIN — Bill Kopp</p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/a7/d0/63/a7d063e7-8d09-df7a-4fca-d1520af0a91e/5410377904026_cover.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Juana Molina</h2><div class="albumtitel">Halo</div></div><span class="pill">2017</span></div>
+    <p class="beschrijving">Argentijnse elektro-folk-pionier; haar Segundo (2000) beïnvloedde half Zuid-Amerika.</p>
+    <p class="aanleiding">Duistere magie uit mythen en sprookjes, diep gravend in emotionele spiegelpaleizen.</p>
+    
+    <a class="apple" href="https://music.apple.com/nl/album/halo/1207456053?uo=4">◎ Album op Apple Music →</a>
+    <p class="album-bronnen">Bronnen: SPIN — Steve Hochman</p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/e8/0b/15/e80b1567-face-82a2-a7ef-91b50964784f/22UMGIM77927.rgb.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>The Comet Is Coming</h2><div class="albumtitel">Hyper-dimensional Expansion Beam</div></div><span class="pill">2022</span></div>
+    <p class="beschrijving">Londens trio rond saxofonist Shabaka Hutchings.</p>
+    <p class="aanleiding">Derde album: soul- en freejazz-kern met hiphop- en elektronica-texturen, melodieus toegankelijk.</p>
+    
+    <a class="apple" href="https://music.apple.com/nl/album/hyper-dimensional-expansion-beam/1635377449?uo=4">◎ Album op Apple Music →</a>
+    <p class="album-bronnen">Bronnen: SPIN — Bill Kopp</p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/e3/b7/79/e3b779f9-3b08-f43d-90bb-e93ee65fc5a0/760137110323.png/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Johnny Gandelsman</h2><div class="albumtitel">This Is America</div></div><span class="pill">2022</span></div>
+    <p class="beschrijving">Violist van Brooklyn Rider en Yo-Yo Ma&#x27;s Silkroad Ensemble.</p>
+    <p class="aanleiding">Bijna vier uur pandemieproject: 25 componisten schreven nieuwe, genre-loze werken — rijk, duizelingwekkend inventief en virtuoos.</p>
+    
+    <a class="apple" href="https://music.apple.com/nl/album/this-is-america-an-anthology-2020-2021/1631465161?uo=4">◎ Album op Apple Music →</a>
+    <p class="album-bronnen">Bronnen: SPIN — Steve Hochman</p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/1b/05/2b/1b052b78-1bec-4f5e-4c28-fd0b09c1f2d5/859761999647_cover.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Tchotchke</h2><div class="albumtitel">Tchotchke</div></div><span class="pill">2023</span></div>
+    
+    <p class="aanleiding">Drie jonge vrouwen met energieke, superplakkerige art-pop met attitude; denk Jellyfish of &#x27;Being for the Benefit of Mr. Kite&#x27;.</p>
+    
+    <a class="apple" href="https://music.apple.com/nl/album/1622599029">◎ Album op Apple Music →</a>
+    <p class="album-bronnen">Bronnen: SPIN — Bill Kopp</p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/45/6f/cb/456fcb21-96e8-d9f8-cbb1-b10e5d9d6fc8/5026328505558_cover.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Trees Speak</h2><div class="albumtitel">Timefold</div></div><span class="pill">2024</span></div>
+    
+    <p class="aanleiding">Arizonees duo tussen krautrock (Tangerine Dream, Neu!) en sixties-soundtracks: hypnotische trance als reis.</p>
+    
+    <a class="apple" href="https://music.apple.com/nl/album/timefold/1768078230?uo=4">◎ Album op Apple Music →</a>
+    <p class="album-bronnen">Bronnen: SPIN — Bill Kopp</p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/14/0a/6a/140a6a7f-73af-3c92-be0d-1c8ac10c31b5/artwork.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Sykofant</h2><div class="albumtitel">Sykofant</div></div><span class="pill">2024</span></div>
+    
+    <p class="aanleiding">Noors kwartet dat van spaghettiwestern via Rush naar Led Zeppelin knikt — met originaliteit, spierballen én humor.</p>
+    
+    <a class="apple" href="https://music.apple.com/nl/album/sykofant/1739927085?uo=4">◎ Album op Apple Music →</a>
+    <p class="album-bronnen">Bronnen: SPIN — Bill Kopp</p>
+  </section>
+
+  <section class="bronnen">
+    <h3>Bronnen</h3>
+    <ul><li><a href="https://www.spinmagazine.com/2025/12/the-40-best-albums-from-the-last-40-years-that-you-probably-didnt-hear-but-shouldve/">SPIN — The 40 Best Albums From the Last 40 Years That You Probably Didn&#x27;t Hear (But Should&#x27;ve)</a> <span class="bron-noot">(het artikel)</span></li></ul>
+  </section>
+
+</main>
+<footer>40 albums</footer>
+</body>
+</html>

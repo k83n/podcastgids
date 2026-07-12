@@ -38,5 +38,13 @@
     "type": "albums",
     "show": "NPR Music",
     "episode": "New Music Friday: The best albums out July 10"
+  },
+  {
+    "path": "spin/2026-01-01.html",
+    "slug": "spin",
+    "datum": "2026-01-01",
+    "type": "albums",
+    "show": "SPIN",
+    "episode": "The 40 Best Albums From the Last 40 Years That You Probably Didn't Hear (But Should've)"
   }
 ]
