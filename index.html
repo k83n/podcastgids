@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Podcastgids</title>
 <meta name="robots" content="noindex, nofollow">
+<link rel="alternate" type="application/rss+xml" title="Podcastgids" href="feed.xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -16,6 +17,8 @@ header { padding:46px 20px 20px; text-align:center; background:radial-gradient(e
 .boventitel { color:var(--accent); font-size:13px; letter-spacing:.25em; text-transform:uppercase; font-weight:600; }
 h1 { font-family:Fraunces,Georgia,serif; font-weight:700; font-size:clamp(30px,7vw,46px); margin:8px 0 6px; }
 header p { color:var(--dim); font-size:15px; max-width:520px; margin:0 auto; }
+a.rss { display:inline-block; margin-top:14px; color:var(--dim); text-decoration:none; font-size:12.5px; font-weight:600; letter-spacing:.06em; text-transform:uppercase; border:1px solid var(--rand); border-radius:999px; padding:4px 12px; }
+a.rss:hover { color:var(--accent); border-color:var(--accent); }
 main { max-width:680px; margin:0 auto; padding:14px 18px 60px; }
 a.kaart { display:block; text-decoration:none; background:var(--kaart); border:1px solid var(--rand); border-radius:14px; padding:16px 18px; margin:12px 0; color:var(--tekst); }
 a.kaart:hover { border-color:var(--accent); }
@@ -31,6 +34,7 @@ a.kaart .datum { color:var(--dim); font-size:13.5px; }
   <div class="boventitel">Podcastgids</div>
   <h1>Muziek uit mijn podcasts</h1>
   <p>Elke oogst uit mijn muziekpodcasts als eigen post: de besproken albums en nummers, met verdieping per artiest.</p>
+  <a class="rss" href="feed.xml">⚡ RSS</a>
 </header>
 <main>
   <a class="kaart" href="npr-music/2026-07-10.html">

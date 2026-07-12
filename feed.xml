@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+  <title>Podcastgids</title>
+  <link>https://k83n.github.io/podcastgids/</link>
+  <description>Muziek uit mijn podcasts — elke oogst als eigen post.</description>
+  <language>nl</language>
+  <item>
+    <title>NPR Music — New Music Friday: The best albums out July 10</title>
+    <link>https://k83n.github.io/podcastgids/npr-music/2026-07-10.html</link>
+    <guid isPermaLink="true">https://k83n.github.io/podcastgids/npr-music/2026-07-10.html</guid>
+    <pubDate>Fri, 10 Jul 2026 08:00:00 +0000</pubDate>
+    <description>Nieuwe oogst (albums) uit NPR Music, aflevering van 10 juli 2026.</description>
+  </item>
+  <item>
+    <title>Alt.Latino — The best Latin music of 2026 (so far)</title>
+    <link>https://k83n.github.io/podcastgids/altlatino/2026-07-08.html</link>
+    <guid isPermaLink="true">https://k83n.github.io/podcastgids/altlatino/2026-07-08.html</guid>
+    <pubDate>Wed, 08 Jul 2026 08:00:00 +0000</pubDate>
+    <description>Nieuwe oogst (albums) uit Alt.Latino, aflevering van 8 juli 2026.</description>
+  </item>
+  <item>
+    <title>NPR Music — The best albums of 2026 (so far)</title>
+    <link>https://k83n.github.io/podcastgids/npr-music/2026-07-03.html</link>
+    <guid isPermaLink="true">https://k83n.github.io/podcastgids/npr-music/2026-07-03.html</guid>
+    <pubDate>Fri, 03 Jul 2026 08:00:00 +0000</pubDate>
+    <description>Nieuwe oogst (albums) uit NPR Music, aflevering van 3 juli 2026.</description>
+  </item>
+  <item>
+    <title>Alt.Latino — Mon Laferte&#x27;s captivating coda</title>
+    <link>https://k83n.github.io/podcastgids/altlatino/2026-07-01.html</link>
+    <guid isPermaLink="true">https://k83n.github.io/podcastgids/altlatino/2026-07-01.html</guid>
+    <pubDate>Wed, 01 Jul 2026 08:00:00 +0000</pubDate>
+    <description>Nieuwe oogst (nummers) uit Alt.Latino, aflevering van 1 juli 2026.</description>
+  </item>
+  <item>
+    <title>NPR Music — New Music Friday: The best albums out June 19</title>
+    <link>https://k83n.github.io/podcastgids/npr-music/2026-06-19.html</link>
+    <guid isPermaLink="true">https://k83n.github.io/podcastgids/npr-music/2026-06-19.html</guid>
+    <pubDate>Fri, 19 Jun 2026 08:00:00 +0000</pubDate>
+    <description>Nieuwe oogst (albums) uit NPR Music, aflevering van 19 juni 2026.</description>
+  </item>
+</channel>
+</rss>
