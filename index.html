@@ -19,7 +19,9 @@ header p { color:var(--dim); font-size:15px; max-width:520px; margin:0 auto; }
 main { max-width:680px; margin:0 auto; padding:14px 18px 60px; }
 a.kaart { display:block; text-decoration:none; background:var(--kaart); border:1px solid var(--rand); border-radius:14px; padding:16px 18px; margin:12px 0; color:var(--tekst); }
 a.kaart:hover { border-color:var(--accent); }
+a.kaart .kaart-kop { display:flex; align-items:center; justify-content:space-between; gap:10px; }
 a.kaart .pod { color:var(--accent); font-size:12.5px; letter-spacing:.12em; text-transform:uppercase; font-weight:600; }
+a.kaart .badge { color:var(--dim); font-size:11.5px; letter-spacing:.06em; text-transform:uppercase; font-weight:600; border:1px solid var(--rand); border-radius:999px; padding:2px 9px; white-space:nowrap; }
 a.kaart h2 { font-family:Fraunces,Georgia,serif; font-weight:600; font-size:20px; margin:4px 0 2px; }
 a.kaart .datum { color:var(--dim); font-size:13.5px; }
 </style>
@@ -28,13 +30,18 @@ a.kaart .datum { color:var(--dim); font-size:13.5px; }
 <header>
   <div class="boventitel">Podcastgids</div>
   <h1>Muziek uit mijn podcasts</h1>
-  <p>Per aflevering de besproken artiesten en nummers, als verdieping bij de bijbehorende Spotify-playlist.</p>
+  <p>Elke oogst uit mijn muziekpodcasts als eigen post: de besproken albums en nummers, met verdieping per artiest.</p>
 </header>
 <main>
   <a class="kaart" href="altlatino/2026-07-01.html">
-    <div class="pod">Alt.Latino</div>
+    <div class="kaart-kop"><span class="pod">Alt.Latino</span><span class="badge">♪ nummers</span></div>
     <h2>Mon Laferte&#x27;s captivating coda</h2>
     <div class="datum">1 juli 2026</div>
+  </a>
+  <a class="kaart" href="npr-music/2026-06-19.html">
+    <div class="kaart-kop"><span class="pod">NPR Music</span><span class="badge">◎ albums</span></div>
+    <h2>New Music Friday: The best albums out June 19</h2>
+    <div class="datum">19 juni 2026</div>
   </a>
 </main>
 </body>

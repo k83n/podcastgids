@@ -5,5 +5,13 @@
     "datum": "2026-07-01",
     "show": "Alt.Latino",
     "episode": "Mon Laferte's captivating coda"
+  },
+  {
+    "path": "npr-music/2026-06-19.html",
+    "slug": "npr-music",
+    "datum": "2026-06-19",
+    "type": "albums",
+    "show": "NPR Music",
+    "episode": "New Music Friday: The best albums out June 19"
   }
 ]
