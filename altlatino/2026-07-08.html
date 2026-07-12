@@ -24,10 +24,12 @@ header .intro { color:var(--tekst); max-width:600px; margin:18px auto 0; font-si
 .spotify-knop small { font-weight:500; opacity:.8; }
 main { max-width:680px; margin:0 auto; padding:12px 18px 60px; }
 .artiest { background:var(--kaart); border:1px solid var(--rand); border-radius:16px; padding:20px 20px 16px; margin:16px 0; }
-.artiest-kop { display:flex; align-items:baseline; justify-content:space-between; gap:12px; flex-wrap:wrap; }
+.artiest-kop { display:flex; align-items:center; justify-content:space-between; gap:14px; flex-wrap:wrap; }
+.kop-tekst { flex:1; min-width:0; }
+.hoes { width:64px; height:64px; border-radius:10px; flex:none; object-fit:cover; border:1px solid var(--rand); background:var(--rand); }
 .artiest h2 { font-family:Fraunces,Georgia,serif; font-weight:600; font-size:24px; margin:0; line-height:1.1; }
 .pill { font-size:11.5px; letter-spacing:.04em; text-transform:uppercase; font-weight:600; color:var(--accent2); border:1px solid var(--accent2); border-radius:999px; padding:3px 10px; white-space:nowrap; }
-.albumtitel { font-family:Fraunces,Georgia,serif; font-style:italic; font-size:17px; color:var(--accent); margin:2px 0 0; }
+.albumtitel { font-family:Fraunces,Georgia,serif; font-style:italic; font-size:17px; color:var(--accent); margin:3px 0 0; }
 .beschrijving { color:var(--dim); font-size:14.5px; margin:10px 0 14px; }
 .aanleiding { color:var(--tekst); font-size:14.5px; margin:0 0 12px; }
 .ontvangst { color:var(--dim); font-size:13.5px; font-style:italic; margin:0 0 14px; padding:8px 12px; border-left:2px solid var(--accent2); background:rgba(212,113,63,.06); border-radius:0 8px 8px 0; }
@@ -61,8 +63,7 @@ a { color:var(--accent); }
 <main>
 
   <section class="artiest">
-    <div class="artiest-kop"><h2>Trueno</h2></div>
-    <div class="albumtitel">TURR4ZO</div>
+    <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/f3/8a/b9/f38ab982-c8d9-8123-71e6-5eabc9fb9d97/196874265529.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Trueno</h2><div class="albumtitel">TURR4ZO</div></div></div>
     <p class="beschrijving">Argentijnse rapper en Latin Grammy-winnaar uit Buenos Aires, bezig aan een gestage wereldwijde opmars.</p>
     <p class="aanleiding">Vierde album, co-geproduceerd door El Guincho (Rosalía): donker, cinematisch eerbetoon aan zijn wijk en aan de Argentijnse muziektraditie — tango-samples naast hiphop en Caribische ritmes, met gasten als Milo J en María Becerra.</p>
     <p class="ontvangst">Alt.Latino noemt het een masterclass in muzikale creatie; ook internationaal (Rolling Stone, NME, Complex) veel aandacht voor zijn meest experimentele plaat tot nu toe.</p>
@@ -70,8 +71,7 @@ a { color:var(--accent); }
   </section>
 
   <section class="artiest">
-    <div class="artiest-kop"><h2>Jonathan Suazo</h2></div>
-    <div class="albumtitel">Ricano Vol. 2: Fruto de mi Corazón</div>
+    <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/4a/3c/6d/4a3c6d08-1d18-952c-2c08-d37d2b6e0459/820200538727.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Jonathan Suazo</h2><div class="albumtitel">Ricano Vol. 2: Fruto de mi Corazón</div></div></div>
     <p class="beschrijving">Altsaxofonist met Puerto Ricaanse én Dominicaanse wortels — &#x27;Ricano&#x27; is zijn eigen woord voor die dubbele identiteit.</p>
     <p class="aanleiding">Vervolg op Vol. 1, uit op Miguel Zenóns label Miel Music: Latin jazz over beproefd geloof, liefde en pril vaderschap, met zijn kwartet en een brede kring gasten.</p>
     
@@ -79,8 +79,7 @@ a { color:var(--accent); }
   </section>
 
   <section class="artiest">
-    <div class="artiest-kop"><h2>Broke Carrey</h2></div>
-    <div class="albumtitel">HIJO DEL PAÍS</div>
+    <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/d4/e9/ad/d4e9ad69-7cda-1960-7aee-9238d0b576d3/cover.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Broke Carrey</h2><div class="albumtitel">HIJO DEL PAÍS</div></div></div>
     <p class="beschrijving">Argentijns artiest die hiphop aan de tango-traditie van zijn land knoopt.</p>
     <p class="aanleiding">Volgens NPR een &#x27;sonische toewijding aan zijn patria&#x27;: ruige, tango-knikkende piano en zorgvuldig gelaagde, tegendraadse beats — eerbetoon aan voorouders én aan vernieuwing.</p>
     
@@ -88,8 +87,7 @@ a { color:var(--accent); }
   </section>
 
   <section class="artiest">
-    <div class="artiest-kop"><h2>X Alfonso</h2></div>
-    <div class="albumtitel">AIRE</div>
+    <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/4d/d3/84/4dd384e2-be74-f3a3-55ec-4a0c97efd1b0/663899164286_cover.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>X Alfonso</h2><div class="albumtitel">AIRE</div></div></div>
     <p class="beschrijving">Cubaanse multi-instrumentalist en producer, spilfiguur in de scene van Havana.</p>
     <p class="aanleiding">Herinterpreteert zestig jaar Cubaanse songs (waaronder Nueva Trova-klassiekers) en maakt ze urgent in tijden van geopolitieke crisis, aangevuld met eigen composities over herinnering en dreigend verlies.</p>
     
@@ -97,8 +95,7 @@ a { color:var(--accent); }
   </section>
 
   <section class="artiest">
-    <div class="artiest-kop"><h2>Silvia Pérez Cruz</h2></div>
-    <div class="albumtitel">Oral_Abisal</div>
+    <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/46/27/16/4627163c-d28c-6961-8230-2ca846ae4d54/196874131381.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Silvia Pérez Cruz</h2><div class="albumtitel">Oral_Abisal</div></div></div>
     <p class="beschrijving">Catalaanse zangeres met een van de meest gevierde stemmen van Spanje.</p>
     <p class="aanleiding">Conceptalbum in twee helften — &#x27;Oral&#x27; (roze: oorsprong, warmte, samen zingen) en &#x27;Abisal&#x27; (blauw: het diepe, introspectie) — gezongen in vier talen, met viool, cello en bas.</p>
     
@@ -106,8 +103,7 @@ a { color:var(--accent); }
   </section>
 
   <section class="artiest">
-    <div class="artiest-kop"><h2>Nuevos Rios</h2></div>
-    <div class="albumtitel">Nuevos Rios</div>
+    <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/e5/3e/84/e53e8455-9f02-6190-9a4d-dcd1b77bec9c/61221.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Nuevos Rios</h2><div class="albumtitel">Nuevos Rios</div></div></div>
     <p class="beschrijving">Nieuw project rond Nidia Góngora (Canalón de Timbiquí, bekend van Quantic) en het Toulouse-trio Reco Reco.</p>
     <p class="aanleiding">Debuut op ZZK Records: Afro-Colombiaanse traditie van de Pacifische kust versmolten met elektronica — marimba, percussie en stemmen in een hypnotiserende trance.</p>
     
@@ -115,8 +111,7 @@ a { color:var(--accent); }
   </section>
 
   <section class="artiest">
-    <div class="artiest-kop"><h2>Criolo, Amaro Freitas &amp; Dino d&#x27;Santiago</h2></div>
-    <div class="albumtitel">CRIOLO, AMARO E DINO</div>
+    <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/9c/ee/a6/9ceea6a8-fb61-e166-6e24-229ea8fa0a5e/199806793244.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Criolo, Amaro Freitas &amp; Dino d&#x27;Santiago</h2><div class="albumtitel">CRIOLO, AMARO E DINO</div></div></div>
     <p class="beschrijving">São Paulo-rapper Criolo, jazzpianist Amaro Freitas en de Kaapverdisch-Portugese zanger Dino d&#x27;Santiago.</p>
     <p class="aanleiding">Afro-Atlantisch drieluik, ontstaan uit een toevallige studio-ontmoeting in Lissabon (voorloper &#x27;Esperança&#x27; kreeg een Latin Grammy-nominatie): rap, jazz, MPB, batuku en morna als één ademhaling.</p>
     
@@ -124,8 +119,7 @@ a { color:var(--accent); }
   </section>
 
   <section class="artiest">
-    <div class="artiest-kop"><h2>Sofia Rei</h2></div>
-    <div class="albumtitel">Antónima</div>
+    <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/14/1c/8d/141c8d57-d92b-c984-e9d0-120765f0999d/199806760970.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Sofia Rei</h2><div class="albumtitel">Antónima</div></div></div>
     <p class="beschrijving">In New York gevestigde Argentijnse vocaliste die stemmen stapelt tot complete koren.</p>
     <p class="aanleiding">Nieuw album met gasten als Gaby Moreno, Daymé Arocena en Xenia Rubinos.</p>
     

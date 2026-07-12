@@ -24,10 +24,12 @@ header .intro { color:var(--tekst); max-width:600px; margin:18px auto 0; font-si
 .spotify-knop small { font-weight:500; opacity:.8; }
 main { max-width:680px; margin:0 auto; padding:12px 18px 60px; }
 .artiest { background:var(--kaart); border:1px solid var(--rand); border-radius:16px; padding:20px 20px 16px; margin:16px 0; }
-.artiest-kop { display:flex; align-items:baseline; justify-content:space-between; gap:12px; flex-wrap:wrap; }
+.artiest-kop { display:flex; align-items:center; justify-content:space-between; gap:14px; flex-wrap:wrap; }
+.kop-tekst { flex:1; min-width:0; }
+.hoes { width:64px; height:64px; border-radius:10px; flex:none; object-fit:cover; border:1px solid var(--rand); background:var(--rand); }
 .artiest h2 { font-family:Fraunces,Georgia,serif; font-weight:600; font-size:24px; margin:0; line-height:1.1; }
 .pill { font-size:11.5px; letter-spacing:.04em; text-transform:uppercase; font-weight:600; color:var(--accent2); border:1px solid var(--accent2); border-radius:999px; padding:3px 10px; white-space:nowrap; }
-.albumtitel { font-family:Fraunces,Georgia,serif; font-style:italic; font-size:17px; color:var(--accent); margin:2px 0 0; }
+.albumtitel { font-family:Fraunces,Georgia,serif; font-style:italic; font-size:17px; color:var(--accent); margin:3px 0 0; }
 .beschrijving { color:var(--dim); font-size:14.5px; margin:10px 0 14px; }
 .aanleiding { color:var(--tekst); font-size:14.5px; margin:0 0 12px; }
 .ontvangst { color:var(--dim); font-size:13.5px; font-style:italic; margin:0 0 14px; padding:8px 12px; border-left:2px solid var(--accent2); background:rgba(212,113,63,.06); border-radius:0 8px 8px 0; }
@@ -61,8 +63,7 @@ a { color:var(--accent); }
 <main>
 
   <section class="artiest">
-    <div class="artiest-kop"><h2>Jack White</h2><span class="pill">Starting 5 · #1</span></div>
-    <div class="albumtitel">Frozen Charlotte</div>
+    <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/18/a9/b9/18a9b9e3-be44-feea-4eb9-864c37ccff3b/67165.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Jack White</h2><div class="albumtitel">Frozen Charlotte</div></div><span class="pill">Starting 5 · #1</span></div>
     <p class="beschrijving">Ex-White Stripes-voorman en garage/blues-rockicoon uit Detroit; runt daarnaast het label Third Man.</p>
     <p class="aanleiding">Zijn zevende soloplaat: zware blues en &#x27;70s-hardrockriffs à la vroege Led Zeppelin — een liefdesbrief aan de gitaar, met spel boven tekst.</p>
     <p class="ontvangst">Sterk ontvangen: 83/100 op Metacritic (&#x27;universal acclaim&#x27;). Critici prijzen het gitaarwerk; kanttekening is dat de songs stilistisch weinig variëren.</p>
@@ -70,8 +71,7 @@ a { color:var(--accent); }
   </section>
 
   <section class="artiest">
-    <div class="artiest-kop"><h2>Baby Rose</h2><span class="pill">Starting 5 · #2</span></div>
-    <div class="albumtitel">YEARNALISM</div>
+    <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/d9/68/eb/d968eb57-b400-b8ee-b156-d167f55dfbee/65472.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Baby Rose</h2><div class="albumtitel">YEARNALISM</div></div><span class="pill">Starting 5 · #2</span></div>
     <p class="beschrijving">Crooner uit Atlanta met een tijdloze contralto die aan Nina Simone en Donny Hathaway doet denken; won dit jaar haar eerste Grammy (voor haar aandeel op Leon Thomas&#x27; MUTT).</p>
     <p class="aanleiding">Derde album, over verlangen en modern daten: soul, gospel, jazz en R&amp;B in één vloeiend geheel.</p>
     <p class="ontvangst">NPR wijdde er een eigen review aan (&#x27;het eerste album dat die stem volledig benut&#x27;); elders omschreven als &#x27;glorieus cinematische soul&#x27;.</p>
@@ -79,8 +79,7 @@ a { color:var(--accent); }
   </section>
 
   <section class="artiest">
-    <div class="artiest-kop"><h2>Suki Waterhouse</h2><span class="pill">Starting 5 · #3</span></div>
-    <div class="albumtitel">Loveland</div>
+    <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/dd/c0/76/ddc076c2-029e-eb48-123a-08584bc5b45d/26UMGIM46751.rgb.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Suki Waterhouse</h2><div class="albumtitel">Loveland</div></div><span class="pill">Starting 5 · #3</span></div>
     <p class="beschrijving">Britse actrice én singer-songwriter; sinds debuut &#x27;I Can&#x27;t Let Go&#x27; (2022) uitgegroeid tot een van de consistentste namen in alt-pop.</p>
     <p class="aanleiding">Derde album: dromerige, rock-getinte alt-pop over wat er ná de verliefdheidsroes overblijft; geschreven na de geboorte van haar eerste kind.</p>
     <p class="ontvangst">Gemengd tot positief (criticiscore 70 op Album of the Year): NME zag &#x27;genoeg om verliefd op te worden&#x27;, Paste vond het juist bloedeloos.</p>
@@ -88,8 +87,7 @@ a { color:var(--accent); }
   </section>
 
   <section class="artiest">
-    <div class="artiest-kop"><h2>Allison Russell</h2><span class="pill">Starting 5 · #4</span></div>
-    <div class="albumtitel">In the Hour of Chaos</div>
+    <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/07/46/87/074687e3-37ec-91e7-4979-36da494e1d7d/25CRGIM52707.rgb.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Allison Russell</h2><div class="albumtitel">In the Hour of Chaos</div></div><span class="pill">Starting 5 · #4</span></div>
     <p class="beschrijving">Canadese roots/Americana-artiest en Grammy-winnaar, bekend van Our Native Daughters en haar solowerk sinds &#x27;Outside Child&#x27;.</p>
     <p class="aanleiding">Gemeenschapsalbum met 28 gasten (o.a. Norah Jones, Brittney Spencer, Ruby Amanfu): jazz, neo-soul, bluegrass en folk over samenkomen als daad van verzet.</p>
     <p class="ontvangst">Vrijwel unaniem lovend: zonovergoten folk-pop &#x27;als een koor dat weigert te verdrinken in de storm&#x27;.</p>
@@ -97,8 +95,7 @@ a { color:var(--accent); }
   </section>
 
   <section class="artiest">
-    <div class="artiest-kop"><h2>Houndmouth</h2><span class="pill">Starting 5 · #5</span></div>
-    <div class="albumtitel">Lordy</div>
+    <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/2b/13/f7/2b13f7e8-b4ec-6ce1-0001-a87ff72ba4ab/31152.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Houndmouth</h2><div class="albumtitel">Lordy</div></div><span class="pill">Starting 5 · #5</span></div>
     <p class="beschrijving">Indie-folkrockband uit Indiana, bekend van &#x27;Sedona&#x27;.</p>
     <p class="aanleiding">Eerste plaat in vijf jaar, geproduceerd door Brad Cook, met gasten als Sam Beam (Iron &amp; Wine) en MJ Lenderman: uitgekleed, intiem kampvuur-folkrock over overleven en opnieuw beginnen.</p>
     <p class="ontvangst">Positief onthaald: &#x27;rafelig en stralend, aanstekelijk en met echte pijn&#x27; — een band die herboren klinkt.</p>
@@ -106,8 +103,7 @@ a { color:var(--accent); }
   </section>
 
   <section class="artiest">
-    <div class="artiest-kop"><h2>Bella Kay</h2><span class="pill">Lightning round</span></div>
-    <div class="albumtitel">My Reckless Abandon</div>
+    <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ec/eb/23/eceb2396-35c1-679b-e302-2d0b7b274606/075679570116.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Bella Kay</h2><div class="albumtitel">My Reckless Abandon</div></div><span class="pill">Lightning round</span></div>
     <p class="beschrijving">20-jarige popsongwriter die doorbrak met &#x27;iloveitiloveitiloveit&#x27; (#2 in de UK-charts).</p>
     <p class="aanleiding">Debuutalbum op Atlantic: dertien nummers over opgroeien, mentale gezondheid en zelfacceptatie, uitvoerend geproduceerd door Idarose.</p>
     
@@ -115,8 +111,7 @@ a { color:var(--accent); }
   </section>
 
   <section class="artiest">
-    <div class="artiest-kop"><h2>Luluc</h2><span class="pill">Lightning round</span></div>
-    <div class="albumtitel">Sweet Thief</div>
+    <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b0/34/48/b03448e7-c898-8a15-b212-81672436e3f5/193436464543_LULUCSweetThiefOuterFront.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Luluc</h2><div class="albumtitel">Sweet Thief</div></div><span class="pill">Lightning round</span></div>
     <p class="beschrijving">Australisch dream-folkduo (Zoë Randell &amp; Steve Hassett), eerder thuis op Sub Pop.</p>
     <p class="aanleiding">Nieuw album vol ingetogen, fluisterzachte folk.</p>
     
@@ -124,8 +119,7 @@ a { color:var(--accent); }
   </section>
 
   <section class="artiest">
-    <div class="artiest-kop"><h2>The Temper Trap</h2><span class="pill">Lightning round</span></div>
-    <div class="albumtitel">Sungazer</div>
+    <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ce/95/99/ce9599dd-06d8-a27f-7003-d4416194da2e/9341004149281_Cover.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>The Temper Trap</h2><div class="albumtitel">Sungazer</div></div><span class="pill">Lightning round</span></div>
     <p class="beschrijving">Australische indierockband, wereldberoemd geworden met &#x27;Sweet Disposition&#x27;.</p>
     <p class="aanleiding">Comebackalbum, getipt in de lightning round.</p>
     
@@ -133,8 +127,7 @@ a { color:var(--accent); }
   </section>
 
   <section class="artiest">
-    <div class="artiest-kop"><h2>Kelela</h2><span class="pill">Lightning round</span></div>
-    <div class="albumtitel">new avatar</div>
+    <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/7a/a8/9e/7aa89e2c-ebb2-f4c4-fc20-42b17b465601/5056818808807.png/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Kelela</h2><div class="albumtitel">new avatar</div></div><span class="pill">Lightning round</span></div>
     <p class="beschrijving">Vernieuwende R&amp;B-artiest op Warp Records.</p>
     <p class="aanleiding">Mengt shoegaze, grunge, R&amp;B en elektronica, met gasten als PinkPantheress, Fousheé en A.K. Paul.</p>
     
@@ -142,8 +135,7 @@ a { color:var(--accent); }
   </section>
 
   <section class="artiest">
-    <div class="artiest-kop"><h2>Tracey Nelson</h2><span class="pill">Lightning round</span></div>
-    <div class="albumtitel">Hercules</div>
+    <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/23/f5/a9/23f5a96c-dd38-9497-0b99-c3fa00078a5e/64085.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Tracey Nelson</h2><div class="albumtitel">Hercules</div></div><span class="pill">Lightning round</span></div>
     
     <p class="aanleiding">Kort getipt in de lightning round.</p>
     
@@ -151,8 +143,7 @@ a { color:var(--accent); }
   </section>
 
   <section class="artiest">
-    <div class="artiest-kop"><h2>Ultra Lights</h2><span class="pill">Lightning round</span></div>
-    <div class="albumtitel">Pleasure&#x27;s All Yours</div>
+    <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/10/46/8b/10468b36-5ad7-b663-dfd1-8b3ec019e209/769152436012.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Ultra Lights</h2><div class="albumtitel">Pleasure&#x27;s All Yours</div></div><span class="pill">Lightning round</span></div>
     
     <p class="aanleiding">Kort getipt in de lightning round (Chunklet).</p>
     

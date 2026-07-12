@@ -24,10 +24,12 @@ header .intro { color:var(--tekst); max-width:600px; margin:18px auto 0; font-si
 .spotify-knop small { font-weight:500; opacity:.8; }
 main { max-width:680px; margin:0 auto; padding:12px 18px 60px; }
 .artiest { background:var(--kaart); border:1px solid var(--rand); border-radius:16px; padding:20px 20px 16px; margin:16px 0; }
-.artiest-kop { display:flex; align-items:baseline; justify-content:space-between; gap:12px; flex-wrap:wrap; }
+.artiest-kop { display:flex; align-items:center; justify-content:space-between; gap:14px; flex-wrap:wrap; }
+.kop-tekst { flex:1; min-width:0; }
+.hoes { width:64px; height:64px; border-radius:10px; flex:none; object-fit:cover; border:1px solid var(--rand); background:var(--rand); }
 .artiest h2 { font-family:Fraunces,Georgia,serif; font-weight:600; font-size:24px; margin:0; line-height:1.1; }
 .pill { font-size:11.5px; letter-spacing:.04em; text-transform:uppercase; font-weight:600; color:var(--accent2); border:1px solid var(--accent2); border-radius:999px; padding:3px 10px; white-space:nowrap; }
-.albumtitel { font-family:Fraunces,Georgia,serif; font-style:italic; font-size:17px; color:var(--accent); margin:2px 0 0; }
+.albumtitel { font-family:Fraunces,Georgia,serif; font-style:italic; font-size:17px; color:var(--accent); margin:3px 0 0; }
 .beschrijving { color:var(--dim); font-size:14.5px; margin:10px 0 14px; }
 .aanleiding { color:var(--tekst); font-size:14.5px; margin:0 0 12px; }
 .ontvangst { color:var(--dim); font-size:13.5px; font-style:italic; margin:0 0 14px; padding:8px 12px; border-left:2px solid var(--accent2); background:rgba(212,113,63,.06); border-radius:0 8px 8px 0; }
@@ -61,7 +63,7 @@ a { color:var(--accent); }
 <main>
 
   <section class="artiest">
-    <div class="artiest-kop"><h2>Sparklmami</h2><span class="pill">Debuutalbum uit</span></div>
+    <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/cd/43/0c/cd430cac-e20d-88c6-0574-0eb100a16da5/26UMGIM13599.rgb.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Sparklmami</h2></div><span class="pill">Debuutalbum uit</span></div>
     <p class="beschrijving">Artiest uit Chicago (geboren in Texas, opgegroeid in Chicago). Zong in de kerk, wat doorklinkt in haar jazzy Chicano-soul — geworteld in de Pilsen-buurt, met vleugjes Braziliaanse jazz.</p>
     <p class="aanleiding">Aanleiding: haar debuutalbum In This Body is uit.</p>
     <a class="apple" href="https://music.apple.com/nl/album/in-this-body/1887972910?uo=4">◎ Album op Apple Music →</a>
@@ -69,7 +71,7 @@ a { color:var(--accent); }
   </section>
 
   <section class="artiest">
-    <div class="artiest-kop"><h2>The Animeros</h2><span class="pill">Album komt in augustus</span></div>
+    <div class="artiest-kop"><div class="kop-tekst"><h2>The Animeros</h2></div><span class="pill">Album komt in augustus</span></div>
     <p class="beschrijving">Band uit Austin, Texas. Electric-guitar cumbia geworteld in de Peruaanse chicha — eindeloze, joyeuze grooves.</p>
     <p class="aanleiding">Aanleiding: hun album ¡Qué Bárbaro! komt in augustus; dit nummer is een remake van een Traffic Sound-track uit 1971.</p>
     
@@ -77,7 +79,7 @@ a { color:var(--accent); }
   </section>
 
   <section class="artiest">
-    <div class="artiest-kop"><h2>Mon Laferte</h2><span class="pill">Nieuw album uit</span></div>
+    <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/6e/49/27/6e4927df-c78d-8466-8d3a-262c96b4ca2c/196874433935.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Mon Laferte</h2></div><span class="pill">Nieuw album uit</span></div>
     <p class="beschrijving">Chileens-Mexicaanse artiest, geroemd als veelzijdige &quot;shape-shifter&quot; die zichzelf per plaat — en zelfs binnen één nummer — opnieuw uitvindt.</p>
     <p class="aanleiding">Aanleiding: haar nieuwe album Femme Fatale Vol. 2 (een paar weken uit), een heruitvinding van Femme Fatale.</p>
     <a class="apple" href="https://music.apple.com/nl/album/femme-fatale-vol-2/6771957515?uo=4">◎ Album op Apple Music →</a>
@@ -85,7 +87,7 @@ a { color:var(--accent); }
   </section>
 
   <section class="artiest">
-    <div class="artiest-kop"><h2>Iveth Luna</h2><span class="pill">Nieuwe EP</span></div>
+    <div class="artiest-kop"><div class="kop-tekst"><h2>Iveth Luna</h2></div><span class="pill">Nieuwe EP</span></div>
     <p class="beschrijving">Texaans-Mexicaanse christelijke artiest uit Mesquite (bij Dallas). Uit een familie van voorgangers; koos na een spirituele ervaring voor muzikale ministry.</p>
     <p class="aanleiding">Aanleiding: haar nieuwe EP rond deze bilinguale single.</p>
     
@@ -93,7 +95,7 @@ a { color:var(--accent); }
   </section>
 
   <section class="artiest">
-    <div class="artiest-kop"><h2>Tijolo</h2><span class="pill">Nieuw album uit</span></div>
+    <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/86/2e/22/862e2272-eb30-e47e-9f6e-4ef94631103b/0631685070721.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Tijolo</h2></div><span class="pill">Nieuw album uit</span></div>
     <p class="beschrijving">Braziliaanse singer-songwriter uit São Paulo. Ingetogen, &quot;sweet&quot; luistermuziek met subtiele invloeden (o.a. milonga), in de rijke Braziliaanse songwriter-traditie.</p>
     <p class="aanleiding">Aanleiding: zijn nieuwe album Y.</p>
     <a class="apple" href="https://music.apple.com/nl/album/y/6769550021?uo=4">◎ Album op Apple Music →</a>
@@ -101,7 +103,7 @@ a { color:var(--accent); }
   </section>
 
   <section class="artiest">
-    <div class="artiest-kop"><h2>MOMO.</h2><span class="pill">Nieuw album uit</span></div>
+    <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c1/ed/06/c1ed0662-1a12-7215-76e9-602c55496887/4260547941877.png/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>MOMO.</h2></div><span class="pill">Nieuw album uit</span></div>
     <p class="beschrijving">Braziliaans project. Het gedraaide nummer heeft bossanova-legende Marcos Valle als gast.</p>
     <p class="aanleiding">Aanleiding: zijn nieuwe album Tum Tum Tum.</p>
     <a class="apple" href="https://music.apple.com/nl/album/tum-tum-tum/1892076337?uo=4">◎ Album op Apple Music →</a>

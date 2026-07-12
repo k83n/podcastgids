@@ -24,10 +24,12 @@ header .intro { color:var(--tekst); max-width:600px; margin:18px auto 0; font-si
 .spotify-knop small { font-weight:500; opacity:.8; }
 main { max-width:680px; margin:0 auto; padding:12px 18px 60px; }
 .artiest { background:var(--kaart); border:1px solid var(--rand); border-radius:16px; padding:20px 20px 16px; margin:16px 0; }
-.artiest-kop { display:flex; align-items:baseline; justify-content:space-between; gap:12px; flex-wrap:wrap; }
+.artiest-kop { display:flex; align-items:center; justify-content:space-between; gap:14px; flex-wrap:wrap; }
+.kop-tekst { flex:1; min-width:0; }
+.hoes { width:64px; height:64px; border-radius:10px; flex:none; object-fit:cover; border:1px solid var(--rand); background:var(--rand); }
 .artiest h2 { font-family:Fraunces,Georgia,serif; font-weight:600; font-size:24px; margin:0; line-height:1.1; }
 .pill { font-size:11.5px; letter-spacing:.04em; text-transform:uppercase; font-weight:600; color:var(--accent2); border:1px solid var(--accent2); border-radius:999px; padding:3px 10px; white-space:nowrap; }
-.albumtitel { font-family:Fraunces,Georgia,serif; font-style:italic; font-size:17px; color:var(--accent); margin:2px 0 0; }
+.albumtitel { font-family:Fraunces,Georgia,serif; font-style:italic; font-size:17px; color:var(--accent); margin:3px 0 0; }
 .beschrijving { color:var(--dim); font-size:14.5px; margin:10px 0 14px; }
 .aanleiding { color:var(--tekst); font-size:14.5px; margin:0 0 12px; }
 .ontvangst { color:var(--dim); font-size:13.5px; font-style:italic; margin:0 0 14px; padding:8px 12px; border-left:2px solid var(--accent2); background:rgba(212,113,63,.06); border-radius:0 8px 8px 0; }
@@ -61,8 +63,7 @@ a { color:var(--accent); }
 <main>
 
   <section class="artiest">
-    <div class="artiest-kop"><h2>Tierra Whack</h2><span class="pill">Starting 5 · #1</span></div>
-    <div class="albumtitel">Whack&#x27;s Museum</div>
+    <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/59/3d/16/593d1699-7a94-ddc4-908e-eb48aed1ce87/26UMGIM65013.rgb.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Tierra Whack</h2><div class="albumtitel">Whack&#x27;s Museum</div></div><span class="pill">Starting 5 · #1</span></div>
     <p class="beschrijving">Rapper uit Philadelphia met een geheel eigen, surrealistisch universum (Whack World).</p>
     <p class="aanleiding">Eerste project sinds World Wide Whack (2024): twaalf tracks in 27 minuten, rauwe dungeon-beats en pure bars.</p>
     <p class="ontvangst">Wordt alom als een van de sterkste hiphopplaten van het jaar gezien; de meest gehoorde klacht is dat het te snel voorbij is.</p>
@@ -70,8 +71,7 @@ a { color:var(--accent); }
   </section>
 
   <section class="artiest">
-    <div class="artiest-kop"><h2>The War and Treaty</h2><span class="pill">Starting 5 · #2</span></div>
-    <div class="albumtitel">The Story of Michael and Tanya</div>
+    <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/cb/fc/35/cbfc35b9-afa0-29ca-bf2b-7ace2bc6ca6e/075679578419.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>The War and Treaty</h2><div class="albumtitel">The Story of Michael and Tanya</div></div><span class="pill">Starting 5 · #2</span></div>
     <p class="beschrijving">Echtpaar Michael en Tanya Trotter: soul, country en gospel met torenhoge stemmen.</p>
     <p class="aanleiding">Zesde album, uitgebracht op Juneteenth: hun eigen liefdesverhaal en vijftien jaar huwelijk, met gasten als Whoopi Goldberg, Valerie June en Wynonna Judd.</p>
     <p class="ontvangst">No Depression noemt het een nieuw hoogtepunt in hun catalogus.</p>
@@ -79,8 +79,7 @@ a { color:var(--accent); }
   </section>
 
   <section class="artiest">
-    <div class="artiest-kop"><h2>Micah Thomas</h2><span class="pill">Starting 5 · #3</span></div>
-    <div class="albumtitel">Lucid</div>
+    <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/6e/84/c6/6e84c67a-acf5-d998-110d-f04fbef3928c/artwork.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Micah Thomas</h2><div class="albumtitel">Lucid</div></div><span class="pill">Starting 5 · #3</span></div>
     <p class="beschrijving">Jonge New Yorkse jazzpianist, bekend van het kwartet van Immanuel Wilkins.</p>
     <p class="aanleiding">In eigen beheer uitgebracht; voor liefhebbers van Immanuel Wilkins en Stan Getz, aldus NPR.</p>
     
@@ -88,8 +87,7 @@ a { color:var(--accent); }
   </section>
 
   <section class="artiest">
-    <div class="artiest-kop"><h2>Gary Bartz &amp; Your Brother&#x27;s Keeper</h2><span class="pill">Starting 5 · #4</span></div>
-    <div class="albumtitel">Where Rivers Meet</div>
+    <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/53/01/6b/53016b75-ada7-fb2a-b2b3-11522f93943e/8718521203870.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Gary Bartz &amp; Your Brother&#x27;s Keeper</h2><div class="albumtitel">Where Rivers Meet</div></div><span class="pill">Starting 5 · #4</span></div>
     <p class="beschrijving">Saxofoonlegende Gary Bartz — veteraan van onder meer Miles Davis&#x27; bands — samen met het collectief Your Brother&#x27;s Keeper.</p>
     <p class="aanleiding">Uit op Gilles Petersons label Brownswood; voor liefhebbers van Weather Report en The Cinematic Orchestra.</p>
     
@@ -97,8 +95,7 @@ a { color:var(--accent); }
   </section>
 
   <section class="artiest">
-    <div class="artiest-kop"><h2>Sam Barsh, Keyon Harrold &amp; Mark Guiliana</h2><span class="pill">Starting 5 · #5</span></div>
-    <div class="albumtitel">Straight08</div>
+    <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/3b/c3/b6/3bc3b6ea-ecbc-a0a5-10f1-71b706b8415d/820200206633.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Sam Barsh, Keyon Harrold &amp; Mark Guiliana</h2><div class="albumtitel">Straight08</div></div><span class="pill">Starting 5 · #5</span></div>
     <p class="beschrijving">Toetsenist Sam Barsh, trompettist Keyon Harrold en drummer Mark Guiliana — drie zwaargewichten uit de moderne jazz- en sessiewereld.</p>
     <p class="aanleiding">Uit op La Reserve; voor liefhebbers van Freddie Hubbard en Ezra Collective.</p>
     
@@ -106,8 +103,7 @@ a { color:var(--accent); }
   </section>
 
   <section class="artiest">
-    <div class="artiest-kop"><h2>Tucker Zimmerman</h2><span class="pill">Lightning round</span></div>
-    <div class="albumtitel">Dream Me A Dream</div>
+    <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/40/d4/50/40d45078-0cff-f727-5949-dae06cb00e65/16197.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Tucker Zimmerman</h2><div class="albumtitel">Dream Me A Dream</div></div><span class="pill">Lightning round</span></div>
     <p class="beschrijving">Folkveteraan van in de tachtig, breed herontdekt dankzij Big Thief (samen maakten ze in 2024 Dance of Love).</p>
     <p class="aanleiding">Nieuw album op Big Potato.</p>
     
@@ -115,8 +111,7 @@ a { color:var(--accent); }
   </section>
 
   <section class="artiest">
-    <div class="artiest-kop"><h2>The Phoenix Trio</h2><span class="pill">Lightning round</span></div>
-    <div class="albumtitel">Tomorrow is Today</div>
+    <div class="artiest-kop"><div class="kop-tekst"><h2>The Phoenix Trio</h2><div class="albumtitel">Tomorrow is Today</div></div><span class="pill">Lightning round</span></div>
     
     <p class="aanleiding">Jazztrio op Giant Step Arts; nog niet te vinden op Apple Music NL.</p>
     
@@ -124,8 +119,7 @@ a { color:var(--accent); }
   </section>
 
   <section class="artiest">
-    <div class="artiest-kop"><h2>Janus Rasmussen</h2><span class="pill">Lightning round</span></div>
-    <div class="albumtitel">Inert</div>
+    <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/79/15/ad/7915adfb-37c9-2eb7-6276-55844a2ef45b/4066004911359_3000.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Janus Rasmussen</h2><div class="albumtitel">Inert</div></div><span class="pill">Lightning round</span></div>
     <p class="beschrijving">Faeröerse elektronicaproducer, de helft van Kiasmos (met Ólafur Arnalds).</p>
     <p class="aanleiding">Nieuw soloalbum op Embassy One.</p>
     
@@ -133,8 +127,7 @@ a { color:var(--accent); }
   </section>
 
   <section class="artiest">
-    <div class="artiest-kop"><h2>Daniel Lanois</h2><span class="pill">Lightning round</span></div>
-    <div class="albumtitel">Belladonna Nocturne</div>
+    <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/10/f2/d2/10f2d2ac-b7f5-ae48-3be4-05a1381a6b00/603497805037.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Daniel Lanois</h2><div class="albumtitel">Belladonna Nocturne</div></div><span class="pill">Lightning round</span></div>
     <p class="beschrijving">Canadese producerlegende (U2, Bob Dylan, Brian Eno) en pionier in sfeervolle, ambient-getinte muziek.</p>
     <p class="aanleiding">Nachtelijk nieuw werk, in de lijn van zijn instrumentale album Belladonna.</p>
     
@@ -142,8 +135,7 @@ a { color:var(--accent); }
   </section>
 
   <section class="artiest">
-    <div class="artiest-kop"><h2>Wild Up</h2><span class="pill">Lightning round</span></div>
-    <div class="albumtitel">Julius Eastman Vol. 5: Gay Guerrilla</div>
+    <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/63/86/09/63860969-8b79-8847-f278-70dfc89e7de4/4062548142563.png/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Wild Up</h2><div class="albumtitel">Julius Eastman Vol. 5: Gay Guerrilla</div></div><span class="pill">Lightning round</span></div>
     <p class="beschrijving">Ensemble uit Los Angeles o.l.v. Christopher Rountree, bezig aan een gevierde reeks rond de minimalistische componist Julius Eastman.</p>
     <p class="aanleiding">Deel vijf van de reeks, rond het titelstuk &#x27;Gay Guerrilla&#x27;, op New Amsterdam.</p>
     

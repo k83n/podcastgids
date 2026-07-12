@@ -24,10 +24,12 @@ header .intro { color:var(--tekst); max-width:600px; margin:18px auto 0; font-si
 .spotify-knop small { font-weight:500; opacity:.8; }
 main { max-width:680px; margin:0 auto; padding:12px 18px 60px; }
 .artiest { background:var(--kaart); border:1px solid var(--rand); border-radius:16px; padding:20px 20px 16px; margin:16px 0; }
-.artiest-kop { display:flex; align-items:baseline; justify-content:space-between; gap:12px; flex-wrap:wrap; }
+.artiest-kop { display:flex; align-items:center; justify-content:space-between; gap:14px; flex-wrap:wrap; }
+.kop-tekst { flex:1; min-width:0; }
+.hoes { width:64px; height:64px; border-radius:10px; flex:none; object-fit:cover; border:1px solid var(--rand); background:var(--rand); }
 .artiest h2 { font-family:Fraunces,Georgia,serif; font-weight:600; font-size:24px; margin:0; line-height:1.1; }
 .pill { font-size:11.5px; letter-spacing:.04em; text-transform:uppercase; font-weight:600; color:var(--accent2); border:1px solid var(--accent2); border-radius:999px; padding:3px 10px; white-space:nowrap; }
-.albumtitel { font-family:Fraunces,Georgia,serif; font-style:italic; font-size:17px; color:var(--accent); margin:2px 0 0; }
+.albumtitel { font-family:Fraunces,Georgia,serif; font-style:italic; font-size:17px; color:var(--accent); margin:3px 0 0; }
 .beschrijving { color:var(--dim); font-size:14.5px; margin:10px 0 14px; }
 .aanleiding { color:var(--tekst); font-size:14.5px; margin:0 0 12px; }
 .ontvangst { color:var(--dim); font-size:13.5px; font-style:italic; margin:0 0 14px; padding:8px 12px; border-left:2px solid var(--accent2); background:rgba(212,113,63,.06); border-radius:0 8px 8px 0; }
@@ -61,8 +63,7 @@ a { color:var(--accent); }
 <main>
 
   <section class="artiest">
-    <div class="artiest-kop"><h2>Noah Kahan</h2><span class="pill">#1</span></div>
-    <div class="albumtitel">The Great Divide</div>
+    <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e0/53/5b/e0535bb5-a269-8cc4-e12f-589e26809569/26UMGIM02802.rgb.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Noah Kahan</h2><div class="albumtitel">The Great Divide</div></div><span class="pill">#1</span></div>
     <p class="beschrijving">Folk-pop-superster uit Vermont; brak wereldwijd door met Stick Season en vult inmiddels stadions.</p>
     <p class="aanleiding">&#x27;Overvol maar enorm de moeite waard&#x27; (NPR): over familie, vriendschap en trauma, met de schuld en ontheemding van zijn raketopkomst als rode draad. Er is ook een uitgebreide editie (&#x27;The Great Divide: The Last Of The Bugs&#x27;).</p>
     <p class="ontvangst">Critici verdeeld (67 op Album of the Year): lof voor de emotionele diepgang en ambitie, kritiek op de lengte (77 minuten) en de vlakke productie van Aaron Dessner.</p>
@@ -70,8 +71,7 @@ a { color:var(--accent); }
   </section>
 
   <section class="artiest">
-    <div class="artiest-kop"><h2>underscores</h2><span class="pill">#2</span></div>
-    <div class="albumtitel">U</div>
+    <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/34/e9/68/34e9680c-152b-9fc6-07e7-8f253e76d8f2/810090098852_Cover.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>underscores</h2><div class="albumtitel">U</div></div><span class="pill">#2</span></div>
     <p class="beschrijving">26-jarige elektronische artiest, eerder verantwoordelijk voor het gevierde conceptalbum Wallsocket (2023).</p>
     <p class="aanleiding">Derde album: van earworm-hyperpop naar een volwaardige popplaat — vroege-2000s bubblegum en freaky R&amp;B, gehaald door glitchy dubstep en future bass.</p>
     <p class="ontvangst">Kritisch omarmd: 86 bij Pitchfork, brede lof voor de productie en experimenteerlust.</p>
@@ -79,8 +79,7 @@ a { color:var(--accent); }
   </section>
 
   <section class="artiest">
-    <div class="artiest-kop"><h2>Cécile McLorin Salvant</h2><span class="pill">#3</span></div>
-    <div class="albumtitel">With Every Breath I Take</div>
+    <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/a9/55/9f/a9559fc7-82bb-d2b3-cbd6-d3fe9d471db6/075597896169.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Cécile McLorin Salvant</h2><div class="albumtitel">With Every Breath I Take</div></div><span class="pill">#3</span></div>
     <p class="beschrijving">Volgens NPR &#x27;de briljantste levende jazzvocalist&#x27;; drievoudig Grammy-winnaar.</p>
     <p class="aanleiding">Haar eerste orkestalbum, met het Nederlandse Metropole Orkest o.l.v. Jules Buckley en arrangementen van Darcy James Argue: standards van Ellington, Weill, Sondheim en anderen van binnenuit herbouwd.</p>
     <p class="ontvangst">Lovend ontvangen: het Nederlandse Maxazine gaf 9/10; AllMusic prijst hoe intiem grootschalige orkestjazz hier klinkt.</p>
@@ -88,8 +87,7 @@ a { color:var(--accent); }
   </section>
 
   <section class="artiest">
-    <div class="artiest-kop"><h2>Neurosis</h2><span class="pill">#4</span></div>
-    <div class="albumtitel">An Undying Love For A Burning World</div>
+    <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/d1/a4/21/d1a4216b-a344-0f3a-16a4-d9c10b6dd159/3663729434586_cover.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Neurosis</h2><div class="albumtitel">An Undying Love For A Burning World</div></div><span class="pill">#4</span></div>
     <p class="beschrijving">Legendarische post-metal/sludgeband uit Oakland; dit is hun eerste album in tien jaar, nu met Aaron Turner (Sumac, ex-Isis) in de gelederen.</p>
     <p class="aanleiding">In het geheim geschreven en onaangekondigd uitgebracht: emotioneel en sonisch agressief maar diep atmosferisch — &#x27;hoopvolle wanhoop&#x27; over overleven te midden van ineenstorting.</p>
     <p class="ontvangst">De metalpers is vrijwel unaniem: de grootste verrassing van het jaar en nu al een van de beste platen van 2026 (The Quietus, Last Rites, Rolling Stone).</p>
@@ -97,8 +95,7 @@ a { color:var(--accent); }
   </section>
 
   <section class="artiest">
-    <div class="artiest-kop"><h2>Tiffany Day</h2><span class="pill">#5</span></div>
-    <div class="albumtitel">HALO</div>
+    <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/6d/65/63/6d6563ef-6376-65fe-f1a4-2453c05dfd24/663918834473.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Tiffany Day</h2><div class="albumtitel">HALO</div></div><span class="pill">#5</span></div>
     <p class="beschrijving">Amerikaanse zangeres en producer.</p>
     <p class="aanleiding">Tweede album: donkere, EDM-geïnspireerde hyperpop over zelftwijfel, onzekerheid en het navigeren van roem.</p>
     <p class="ontvangst">Gemengd: Pitchfork gaf 69 (&#x27;bedroom-pop-kwetsbaarheid gekoppeld aan electroclash-chaos&#x27;), Anthony Fantano bleef op 50 steken.</p>
@@ -106,8 +103,7 @@ a { color:var(--accent); }
   </section>
 
   <section class="artiest">
-    <div class="artiest-kop"><h2>Erik Hall, Metropolis Ensemble &amp; Sandbox Percussion</h2><span class="pill">#6</span></div>
-    <div class="albumtitel">Canto Ostinato</div>
+    <div class="artiest-kop"><img class="hoes" src="https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/68/4f/2c/684f2c0b-7284-9737-bc0b-b8e063eb93fe/61603.jpg/300x300bb.jpg" alt="" loading="lazy"><div class="kop-tekst"><h2>Erik Hall, Metropolis Ensemble &amp; Sandbox Percussion</h2><div class="albumtitel">Canto Ostinato</div></div><span class="pill">#6</span></div>
     <p class="beschrijving">Amerikaans gezelschap rond multi-instrumentalist Erik Hall, het Metropolis Ensemble en slagwerkkwartet Sandbox Percussion.</p>
     <p class="aanleiding">Simeon ten Holts Nederlandse minimalistische klassieker (een halve eeuw oud) opnieuw gedacht voor mallets, blazers, strijkers en piano: meditatieve, wervelende klankstromen met interpretatieve vrijheid.</p>
     
