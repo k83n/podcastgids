@@ -54,5 +54,13 @@
     "type": "albums",
     "show": "The Guardian",
     "episode": "The 10 best jazz albums of 2023"
+  },
+  {
+    "path": "loud-and-quiet/2024-11-28.html",
+    "slug": "loud-and-quiet",
+    "datum": "2024-11-28",
+    "type": "albums",
+    "show": "Loud And Quiet",
+    "episode": "Albums of the Year 2024"
   }
 ]
