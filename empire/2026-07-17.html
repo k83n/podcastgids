@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Empire Film Podcast — 17 juli 2026</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="apple-touch-icon" href="https://k83n.github.io/oogst/apple-touch-icon.png?v=2">
+<link rel="icon" type="image/png" href="https://k83n.github.io/oogst/favicon.png?v=2">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root { --bg:#12100d; --kaart:#1c1915; --rand:#2c2822; --tekst:#ece5d8; --dim:#a89f8d; --accent:#e8b04b; --accent2:#d4713f; --groen:#1db954; --apple:#fc5c76; }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--tekst); font-family:Inter,-apple-system,"Helvetica Neue",sans-serif; line-height:1.55; -webkit-font-smoothing:antialiased; }
+header { padding:20px 20px 26px; text-align:center; background:radial-gradient(ellipse 90% 120% at 50% -20%,#3a2c14 0%,transparent 60%),var(--bg); }
+.terug { text-align:left; max-width:680px; margin:0 auto 22px; }
+.terug a { color:var(--dim); text-decoration:none; font-size:13.5px; font-weight:500; }
+.terug a:hover { color:var(--accent); }
+header .boventitel { color:var(--accent); font-size:13px; letter-spacing:.25em; text-transform:uppercase; font-weight:600; }
+h1 { font-family:Fraunces,Georgia,serif; font-weight:700; font-size:clamp(30px,7vw,48px); margin:8px 0 6px; line-height:1.06; }
+header .datum { color:var(--dim); font-size:14px; }
+header .intro { color:var(--tekst); max-width:600px; margin:18px auto 0; font-size:15.5px; opacity:.92; }
+.spotify-knop { display:inline-flex; align-items:center; gap:8px; margin-top:22px; background:var(--groen); color:#04150a; text-decoration:none; font-weight:600; font-size:15px; padding:11px 22px; border-radius:999px; }
+.spotify-knop small { font-weight:500; opacity:.8; }
+main { max-width:680px; margin:0 auto; padding:12px 18px 60px; }
+.artiest { background:var(--kaart); border:1px solid var(--rand); border-radius:16px; padding:20px 20px 16px; margin:16px 0; }
+.artiest-kop { display:flex; align-items:center; justify-content:space-between; gap:14px; flex-wrap:wrap; }
+.kop-tekst { flex:1; min-width:0; }
+.hoes { width:64px; height:64px; border-radius:10px; flex:none; object-fit:cover; border:1px solid var(--rand); background:var(--rand); }
+.hoes.poster { width:56px; height:84px; border-radius:8px; }
+.artiest h2 { font-family:Fraunces,Georgia,serif; font-weight:600; font-size:24px; margin:0; line-height:1.1; }
+.pill { font-size:11.5px; letter-spacing:.04em; text-transform:uppercase; font-weight:600; color:var(--accent2); border:1px solid var(--accent2); border-radius:999px; padding:3px 10px; white-space:nowrap; }
+.albumtitel { font-family:Fraunces,Georgia,serif; font-style:italic; font-size:17px; color:var(--accent); margin:3px 0 0; }
+.beschrijving { color:var(--dim); font-size:14.5px; margin:10px 0 14px; }
+.aanleiding { color:var(--tekst); font-size:14.5px; margin:0 0 12px; }
+.ontvangst { color:var(--dim); font-size:13.5px; font-style:italic; margin:0 0 14px; padding:8px 12px; border-left:2px solid var(--accent2); background:rgba(212,113,63,.06); border-radius:0 8px 8px 0; }
+.oordeel { margin:0 0 14px; padding:12px 14px; border:1px solid var(--rand); border-radius:12px; background:rgba(232,176,75,.05); }
+.score-kop { font-size:11.5px; letter-spacing:.08em; text-transform:uppercase; color:var(--dim); font-weight:600; margin:0 0 7px; }
+.score { display:flex; align-items:center; gap:4px; }
+.pc { width:22px; height:22px; flex:none; }
+.pc.vol { fill:var(--accent); }
+.pc.leeg { fill:#39332a; }
+.score-num { margin-left:8px; color:var(--accent); font-weight:600; font-size:13.5px; }
+.inschatting { color:var(--tekst); font-size:14px; margin:9px 0 0; }
+.notion-status { color:var(--dim); font-size:13px; margin:0 0 14px; }
+.notion-status.aanwezig { color:var(--groen); }
+.kijk { display:inline-flex; align-items:center; gap:6px; margin:0 0 16px; font-size:13px; font-weight:600; color:var(--accent); text-decoration:none; border:1px solid #4a3d22; border-radius:999px; padding:5px 13px; }
+.kijk:hover { border-color:var(--accent); }
+.kijk.lb { color:#00e054; border-color:#1e4633; }
+.kijk.lb:hover { border-color:#00e054; }
+.apple { display:inline-flex; align-items:center; gap:6px; margin:0 0 16px; font-size:13px; font-weight:600; color:var(--apple); text-decoration:none; border:1px solid #45323a; border-radius:999px; padding:5px 13px; }
+.apple:hover { border-color:var(--apple); }
+.nummers { list-style:none; margin:0; padding:0; border-top:1px solid var(--rand); }
+.nummers li { display:flex; align-items:center; gap:12px; padding:11px 2px; border-bottom:1px solid var(--rand); }
+.nummers li:last-child { border-bottom:none; }
+.noot { color:var(--groen); flex:none; font-size:15px; }
+.titel { font-weight:500; }
+.album-bronnen { color:var(--dim); font-size:12px; margin:12px 0 0; padding-top:10px; border-top:1px solid var(--rand); }
+.album-bronnen a { color:var(--dim); text-decoration:underline; text-decoration-color:var(--rand); text-underline-offset:3px; }
+.album-bronnen a:hover { color:var(--accent); }
+.extra-kop { font-family:Fraunces,Georgia,serif; font-weight:600; font-size:15px; color:var(--dim); margin:34px 0 2px; letter-spacing:.04em; text-transform:uppercase; }
+.bronnen { margin:34px 0 0; padding-top:18px; border-top:1px solid var(--rand); }
+.bronnen h3 { font-family:Fraunces,Georgia,serif; font-weight:600; font-size:15px; color:var(--dim); margin:0 0 8px; letter-spacing:.04em; text-transform:uppercase; }
+.bronnen ul { list-style:none; margin:0; padding:0; }
+.bronnen li { color:var(--dim); font-size:13px; padding:3.5px 0; }
+.bronnen a { color:var(--dim); text-decoration:underline; text-decoration-color:var(--rand); text-underline-offset:3px; }
+.bronnen a:hover { color:var(--accent); }
+.bron-noot { opacity:.75; }
+footer { text-align:center; color:var(--dim); font-size:12.5px; padding:0 20px 40px; }
+a { color:var(--accent); }
+</style>
+</head>
+<body>
+<header>
+  <nav class="terug"><a href="../">← Oogst</a></nav>
+  <div class="boventitel">The Empire Film Podcast</div>
+  <h1>Do You See? (ft. Christopher Nolan)</h1>
+  <div class="datum">Aflevering 17 juli 2026</div>
+  <p class="intro">Een dubbele aflevering: Chris Hewitt, Helen O&#x27;Hara, James Dyer en Alex Godfrey staan eerst stil bij het overlijden van Sam Neill (78) en stellen een — eigenhandig tot zes koppen uitgebreide — Mount Rushmore van zijn rollen samen. Daarna de reviews van de week, met als hoofdgerecht Christopher Nolans The Odyssey, gevolgd door Hewitts interview met Nolan zelf.</p>
+  
+</header>
+<main>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><symbol id="pcorn" viewBox="0 0 24 24">
+  <circle cx="7.2" cy="7.4" r="3.1"/>
+  <circle cx="12" cy="5.6" r="3.4"/>
+  <circle cx="16.8" cy="7.4" r="3.1"/>
+  <path d="M4.6 10 L6.6 21.2 L17.4 21.2 L19.4 10 Z"/>
+  <path d="M9.4 10.2 L10.1 21" stroke="#12100d" stroke-width="1.5" fill="none"/>
+  <path d="M14.6 10.2 L13.9 21" stroke="#12100d" stroke-width="1.5" fill="none"/>
+</symbol></defs></svg>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes poster" src="https://a.ltrbxd.com/resized/film-poster/1/2/5/5/3/9/4/1255394-the-odyssey-2026-0-600-0-900-crop.jpg?v=1eed046d0c" alt="" loading="lazy"><div class="kop-tekst"><h2>The Odyssey</h2><div class="albumtitel">film · 2026 · bioscoop</div></div><span class="pill">Hoofdonderwerp · bioscoop</span></div>
+    <p class="aanleiding">Alle drie de recensenten zijn laaiend. Helen O&#x27;Hara — naar eigen zeggen nooit de grootste Nolan-fan — noemt het &#x27;off the charts incredible&#x27; en prijst hoe diep hij in de bronsttijdbronnen buiten Homerus is gedoken, zónder de monsters en giganten weg te rationaliseren. Chris Hewitt zag hem twee keer en noemt het &#x27;absolute cinema&#x27;: bijna drie uur, gedempt van kleur, &#x27;punishingly dour&#x27; en episodisch, maar door de montage voortdurend voortstuwend. Kritiek is er nauwelijks — een paar vertelmomenten die zelfs bij tweede kijkbeurt onduidelijk blijven. Advies: de grootst mogelijke IMAX.</p>
+    <p class="ontvangst">Uitzonderlijk. Rotten Tomatoes staat rond 96–99% — de hoogste score van Nolans carrière, boven The Dark Knight en Memento — met een Metascore van 89, net onder Oppenheimer. Critici noemen het een van de beste epische fantasyfilms ooit gemaakt, met lof voor cinematografie, score en praktische effecten.</p>
+    <div class="oordeel"><div class="score-kop">Iets voor mij?</div><div class="score" role="img" aria-label="score 5 van 5"><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><span class="score-num">5/5</span></div><p class="inschatting">Dit is precies de hoek waar jij hoog zit: grote, ambitieuze auteursfilms als One Battle After Another (★4,5), The Brutalist en Killers of the Flower Moon (beide ★4). Drie uur zwaarmoedig epos met formele ambitie en een intieme landing — moeilijk voor te stellen dat dit misgaat. Wel echt een bioscoopfilm.</p></div>
+    <p class="notion-status">○ Nog niet in mijn Notion-database</p>
+    <a class="kijk lb" href="https://letterboxd.com/film/the-odyssey-2026/">◆ Bekijk op Letterboxd →</a>
+    <a class="kijk" href="shortcuts://run-shortcut?name=Zoek%20in%20Sequel&amp;input=text&amp;text=The%20Odyssey">▶ Zoek in Sequel →</a>
+    <p class="album-bronnen">Bronnen: <a href="https://www.rottentomatoes.com/m/the_odyssey_2026">Rotten Tomatoes</a> · <a href="https://www.metacritic.com/movie/the-odyssey-2026/">Metacritic</a> · <a href="https://www.goldderby.com/film/2026/the-odyssey-christopher-nolan-reviews-oscars/">Gold Derby</a></p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes poster" src="https://a.ltrbxd.com/resized/film-poster/1/3/4/5/0/3/4/1345034-heartstopper-forever-0-600-0-900-crop.jpg?v=f81bb0734e" alt="" loading="lazy"><div class="kop-tekst"><h2>Heartstopper Forever</h2><div class="albumtitel">film · 2026 · Netflix</div></div><span class="pill">Review · Netflix</span></div>
+    <p class="aanleiding">Drie sterren, met een grote kanttekening: dit is volgens de panelleden nauwelijks een film — eerder een verlengde afsluiting van de serie. Sympathiek gedaan en de cast bevalt, maar wie de serie niet kent, begrijpt er niets van (&#x27;this will be Greek to you&#x27;). Hun oordeel: kijk je de serie, tel er een ster bij op; ken je &#x27;m niet, dan is dit niet de plek om te beginnen.</p>
+    <p class="ontvangst">Overwegend positief. Variety en ScreenRant noemen het een passend, volwassen slot; NME spreekt van een rommelig maar hartelijk afscheid. Terugkerende kritiek: te veel focus op Charlie en Nick, waardoor de bijfiguren nauwelijks aan bod komen. Toon is somberder dan verwacht.</p>
+    <div class="oordeel"><div class="score-kop">Iets voor mij?</div><div class="score" role="img" aria-label="score 2 van 5"><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc leeg" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc leeg" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc leeg" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><span class="score-num">2/5</span></div><p class="inschatting">Alleen relevant als je de serie hebt gezien — die staat niet in je Notion. Als losse film is er weinig aanleiding; YA-romance komt in je kijkgeschiedenis niet voor als iets waar je warm voor loopt.</p></div>
+    <p class="notion-status">○ Nog niet in mijn Notion-database</p>
+    <a class="kijk lb" href="https://letterboxd.com/film/heartstopper-forever/">◆ Bekijk op Letterboxd →</a>
+    <a class="kijk" href="shortcuts://run-shortcut?name=Zoek%20in%20Sequel&amp;input=text&amp;text=Heartstopper%20Forever">▶ Zoek in Sequel →</a>
+    <p class="album-bronnen">Bronnen: <a href="https://variety.com/2026/tv/reviews/heartstopper-forever-review-netflix-1236812518/">Variety</a> · <a href="https://www.nme.com/reviews/film-reviews/heartstopper-forever-review-joe-locke-kit-connor-netflix-3957343">NME</a> · <a href="https://www.avclub.com/heartstopper-forever-review">AV Club</a></p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes poster" src="https://a.ltrbxd.com/resized/film-poster/1/1/4/2/8/2/9/1142829-couples-weekend-0-600-0-900-crop.jpg?v=b39283f16d" alt="" loading="lazy"><div class="kop-tekst"><h2>Couples Weekend</h2><div class="albumtitel">film · 2025 · bioscoop</div></div><span class="pill">Review · bioscoop</span></div>
+    <p class="aanleiding">Twee sterren en zichtbare teleurstelling. Het regiedebuut van Nora Kirkpatrick zet twee stellen (Daddario, Gad, Diggs, Park) ingesneeuwd in een afgelegen hut nadat blijkt dat hun partners iets met elkaar hebben — een opzet met veel potentie die volgens de recensent blijft steken in mensen die tegen elkaar schreeuwen, dronken worden en af en toe dansen. &#x27;Rudimentair&#x27; in vergelijking met The Invite, dat hetzelfde terrein veel beter bestrijkt: vlak, bloedeloos en toneelmatig.</p>
+    <p class="ontvangst">Gemengd. Rotten Tomatoes staat op 55% (22 critici, gemiddeld 6,0/10). Roger Ebert.com noemt het net zo onopvallend als de titel; ScreenRant is milder en prijst vooral Josh Gad, maar noemt de uitvoering ongelijk.</p>
+    <div class="oordeel"><div class="score-kop">Iets voor mij?</div><div class="score" role="img" aria-label="score 2 van 5"><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc leeg" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc leeg" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc leeg" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><span class="score-num">2/5</span></div><p class="inschatting">Lichte relatiekomedies met een gemengd onthaal blijven bij jou steken rond de ★2 — I Want You Back en Spin Me Round gingen dezelfde kant op. Weinig reden om hier tijd in te steken.</p></div>
+    <p class="notion-status">○ Nog niet in mijn Notion-database</p>
+    <a class="kijk lb" href="https://letterboxd.com/film/couples-weekend/">◆ Bekijk op Letterboxd →</a>
+    <a class="kijk" href="shortcuts://run-shortcut?name=Zoek%20in%20Sequel&amp;input=text&amp;text=Couples%20Weekend">▶ Zoek in Sequel →</a>
+    <p class="album-bronnen">Bronnen: <a href="https://www.rogerebert.com/reviews/couples-weekend-josh-gad-daveed-diggs-movie-review-2026">RogerEbert.com</a> · <a href="https://www.rottentomatoes.com/m/couples_weekend">Rotten Tomatoes</a> · <a href="https://screenrant.com/couples-weekend-movie-2026-review/">ScreenRant</a></p>
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes poster" src="https://a.ltrbxd.com/resized/sm/upload/1g/zz/ez/d8/yyCKYaW908ZbpexpnBJ3p8o87HA-0-600-0-900-crop.jpg?v=19a50874d0" alt="" loading="lazy"><div class="kop-tekst"><h2>Jurassic Park</h2><div class="albumtitel">film · 1993</div></div><span class="pill">Sam Neill-eerbetoon</span></div>
+    <p class="aanleiding">Alan Grant wordt door het panel min of meer verplicht op de berg gezet — zozeer dat ze bijna vergeten hem te kiezen omdat iedereen &#x27;m voor een ander bewaart. Helens favoriete moment is niet de brachiosaurus-onthulling maar Grants ineenzakken erbij; daarnaast veel plezier om hoe consequent hij kinderen traumatiseert.</p>
+    
+    <div class="oordeel"><div class="score-kop">Iets voor mij?</div><div class="score" role="img" aria-label="score 4 van 5"><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc leeg" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><span class="score-num">4/5</span></div><p class="inschatting">De vanzelfsprekende Sam Neill-film, en de kans is groot dat je &#x27;m al kent — hij staat niet in je Notion. Als herkijk met een kind in huis over een paar jaar een prima aanleiding.</p></div>
+    <p class="notion-status">○ Nog niet in mijn Notion-database</p>
+    <a class="kijk lb" href="https://letterboxd.com/film/jurassic-park/">◆ Bekijk op Letterboxd →</a>
+    <a class="kijk" href="shortcuts://run-shortcut?name=Zoek%20in%20Sequel&amp;input=text&amp;text=Jurassic%20Park">▶ Zoek in Sequel →</a>
+    
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes poster" src="https://a.ltrbxd.com/resized/sm/upload/z3/0g/ol/7s/gALeMjf3NlSXy1gbz3eKct1aRhd-0-600-0-900-crop.jpg?v=d2b19175d7" alt="" loading="lazy"><div class="kop-tekst"><h2>Hunt for the Wilderpeople</h2><div class="albumtitel">film · 2016</div></div><span class="pill">Sam Neill-eerbetoon</span></div>
+    <p class="aanleiding">Helens keuze: Neill als de norse bushman Heck die tegen wil en dank de jonge Ricky Baker door de wildernis begeleidt. Zij noemt het een van de beste rollen van de laatste twintig jaar.</p>
+    
+    <div class="oordeel"><div class="score-kop">Iets voor mij?</div><div class="score" role="img" aria-label="score 4 van 5"><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc leeg" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><span class="score-num">4/5</span></div><p class="inschatting">Waititi&#x27;s warme, droogkomische kant — dezelfde hoek als Turning Red (★4,5) en Dìdi (★4). Van alle eerbetoon-titels de meest gerichte tip voor jou, en hij staat niet in je lijst.</p></div>
+    <p class="notion-status">○ Nog niet in mijn Notion-database</p>
+    <a class="kijk lb" href="https://letterboxd.com/film/hunt-for-the-wilderpeople/">◆ Bekijk op Letterboxd →</a>
+    <a class="kijk" href="shortcuts://run-shortcut?name=Zoek%20in%20Sequel&amp;input=text&amp;text=Hunt%20for%20the%20Wilderpeople">▶ Zoek in Sequel →</a>
+    
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes poster" src="https://a.ltrbxd.com/resized/film-poster/4/8/8/8/1/48881-the-dish-0-600-0-900-crop.jpg?v=d621640699" alt="" loading="lazy"><div class="kop-tekst"><h2>The Dish</h2><div class="albumtitel">film · 2000</div></div><span class="pill">Sam Neill-eerbetoon</span></div>
+    <p class="aanleiding">Erbij gehaald omdat het panel het niet over zijn kant kon laten gaan. Kleine Australische film over de radiotelescoop die in 1969 de maanlandingsbeelden opving; Neill speelt de baas van de schotel, met pijp en vest — &#x27;de meest oergezellige man in de filmgeschiedenis&#x27;.</p>
+    
+    <div class="oordeel"><div class="score-kop">Iets voor mij?</div><div class="score" role="img" aria-label="score 3 van 5"><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc leeg" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc leeg" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><span class="score-num">3/5</span></div><p class="inschatting">Zachtaardige, kleinschalige feelgood met een historische haak. Geen uitgesproken match met je toppers, maar ook nergens risico — het type film dat bij jou rond de ★3,5 landt.</p></div>
+    <p class="notion-status">○ Nog niet in mijn Notion-database</p>
+    <a class="kijk lb" href="https://letterboxd.com/film/the-dish/">◆ Bekijk op Letterboxd →</a>
+    <a class="kijk" href="shortcuts://run-shortcut?name=Zoek%20in%20Sequel&amp;input=text&amp;text=The%20Dish">▶ Zoek in Sequel →</a>
+    
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes poster" src="https://a.ltrbxd.com/resized/film-poster/2/0/9/3/8/2/209382-thor-ragnarok-0-600-0-900-crop.jpg?v=0369e00db5" alt="" loading="lazy"><div class="kop-tekst"><h2>Thor: Ragnarok</h2><div class="albumtitel">film · 2017</div></div><span class="pill">Sam Neill-eerbetoon</span></div>
+    <p class="aanleiding">James Dyers bewust linkse keuze: Neill als &#x27;valse Odin&#x27; in een korte maar heerlijke scène die volgens hem meteen samenvat wat die film doet — voor hem de eerste pure comedy binnen de MCU.</p>
+    
+    <div class="oordeel"><div class="score-kop">Iets voor mij?</div><div class="score" role="img" aria-label="score 3 van 5"><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc leeg" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc leeg" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><span class="score-num">3/5</span></div><p class="inschatting">Marvel scoort bij jou structureel laag (Quantumania ★2, Captain America: Brave New World ★1,5), maar Ragnarok is juist de Waititi-uitzondering. Als je &#x27;m nog niet zag, is dit de enige MCU-film die ik je op basis van je smaak zou aanraden.</p></div>
+    <p class="notion-status">○ Nog niet in mijn Notion-database</p>
+    <a class="kijk lb" href="https://letterboxd.com/film/thor-ragnarok/">◆ Bekijk op Letterboxd →</a>
+    <a class="kijk" href="shortcuts://run-shortcut?name=Zoek%20in%20Sequel&amp;input=text&amp;text=Thor%3A%20Ragnarok">▶ Zoek in Sequel →</a>
+    
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes poster" src="https://a.ltrbxd.com/resized/sm/upload/ee/z5/lx/dc/vo02iJLsem3VCJ2TNvSzRiJMpAE-0-600-0-900-crop.jpg?v=c047098184" alt="" loading="lazy"><div class="kop-tekst"><h2>Event Horizon</h2><div class="albumtitel">film · 1997</div></div><span class="pill">Sam Neill-eerbetoon</span></div>
+    <p class="aanleiding">Chris Hewitts onvermijdelijke keuze: dr. William Weir, die begint als ogen en oren van het publiek en gaandeweg door het ruimteschip wordt gecorrupteerd — eindigend zonder oogleden en met de nodige schade. Het panel geniet zichtbaar van de tragische boog én van de pulp.</p>
+    
+    <div class="oordeel"><div class="score-kop">Iets voor mij?</div><div class="score" role="img" aria-label="score 2 van 5"><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc leeg" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc leeg" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc leeg" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><span class="score-num">2/5</span></div><p class="inschatting">Grimmige pulp-sci-fi-horror. Jouw horror-uitstapjes (The Rental ★2, Crimes of the Future ★2) vielen tegen; dit is vooral een cultklassieker voor wie van de nasty jaren-90-hoek houdt.</p></div>
+    <p class="notion-status">○ Nog niet in mijn Notion-database</p>
+    <a class="kijk lb" href="https://letterboxd.com/film/event-horizon/">◆ Bekijk op Letterboxd →</a>
+    <a class="kijk" href="shortcuts://run-shortcut?name=Zoek%20in%20Sequel&amp;input=text&amp;text=Event%20Horizon">▶ Zoek in Sequel →</a>
+    
+  </section>
+
+  <section class="artiest">
+    <div class="artiest-kop"><img class="hoes poster" src="https://a.ltrbxd.com/resized/film-poster/4/5/9/1/5/45915-omen-iii-the-final-conflict-0-600-0-900-crop.jpg?v=9635260216" alt="" loading="lazy"><div class="kop-tekst"><h2>Omen III: The Final Conflict</h2><div class="albumtitel">film · 1981</div></div><span class="pill">Sam Neill-eerbetoon</span></div>
+    <p class="aanleiding">Alex Godfrey kiest Damien Thorne — niet omdat de film goed is (het panel erkent dat dit niet het beste deel van de trilogie is, &#x27;not the best of many things&#x27;), maar omdat dit voor hem de eerste Sam Neill was en de scène in de kerk zich in zijn hoofd heeft gebrand. Neill is er overtuigend als gladde, gewetenloze schoft.</p>
+    
+    <div class="oordeel"><div class="score-kop">Iets voor mij?</div><div class="score" role="img" aria-label="score 2 van 5"><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc vol" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc leeg" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc leeg" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><svg class="pc leeg" viewBox="0 0 24 24" aria-hidden="true"><use href="#pcorn"/></svg><span class="score-num">2/5</span></div><p class="inschatting">Op eigen kracht een matige derde franchisefilm, en dat zegt het panel er zelf ook bij. Vooral interessant als curiositeit binnen Neills oeuvre.</p></div>
+    <p class="notion-status">○ Nog niet in mijn Notion-database</p>
+    <a class="kijk lb" href="https://letterboxd.com/film/the-final-conflict/">◆ Bekijk op Letterboxd →</a>
+    <a class="kijk" href="shortcuts://run-shortcut?name=Zoek%20in%20Sequel&amp;input=text&amp;text=Omen%20III%3A%20The%20Final%20Conflict">▶ Zoek in Sequel →</a>
+    
+  </section>
+
+  <section class="bronnen">
+    <h3>Bronnen</h3>
+    <ul><li><a href="https://pocketcasts.com/podcast/the-empire-film-podcast/0ff93990-49c0-012f-0a06-525400c11844/do-you-see-ft-christopher-nolan/3a075f35-6dd0-40f6-9fa7-e0cc8085d7d2">The Empire Film Podcast — Do You See? (ft. Christopher Nolan)</a> <span class="bron-noot">(de aflevering, Pocket Casts)</span></li><li><a href="https://pocketcasts.com/podcast/the-empire-film-podcast/0ff93990-49c0-012f-0a06-525400c11844/do-you-see-ft-christopher-nolan/3a075f35-6dd0-40f6-9fa7-e0cc8085d7d2">The Empire Film Podcast — aflevering</a></li></ul>
+  </section>
+
+</main>
+<footer>9 titels · 9 films</footer>
+</body>
+</html>
